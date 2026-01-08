@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Segmentum - Children of the Omnissiah</name>
+	<author>REDACTED, Abomination, T H E  S U S P E C T, A Random Cogboy, TwoLargeGayMen</author>
+	<packageId>REDACTED.Segmentum.ChildrenOfTheOmnissiah</packageId>
+	<modVersion>1.0</modVersion>
+	<description>"From the moment I understood the weakness of my flesh, it disgusted me. [...]"\n\nServe with or battle against the Adeptus Mechanicus, the priesthood of Mars and masters of the Machine Cult. Rejecting the frailty of flesh, they pursue perfection through augmentation, superstitious rituals, and absolute adherence to ancient knowledge. \n\nThis mod includes:\n- Apparels\n- Weapons\n- Structures\n\nChildren of the Omnissiah is part of "Segmentum", a Warhammer 40.000 modding series by REDACTED.</description>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Phonicmas.RimDark.FrameworkCore</packageId>
+			<displayName>RimDark 40k - Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/Workshop/filedetails/?id=3267464767</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>ShunTheWitch.CVNmechanoidwarfarecore</packageId>
+			<displayName>CVN Mechanoid Warfare Core</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/Workshop/filedetails/?id=3047564391</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>Ludeon.RimWorld.Odyssey</li>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>RedMattis.BetterPrerequisites</li>
+		<li>Dubwise.Rimatomics</li>
+		<li>dubwise.dubsbadhygiene</li>
+		<li>ceteam.combatextended</li>
+		<li>Phonicmas.RimDark.FrameworkCore</li>
+		<li>vanillaexpanded.vpsycastse</li>
+		<li>ShunTheWitch.CVNmechanoidwarfarecore</li>
+	</loadAfter>
+	
+</ModMetaData>
