@@ -4,7 +4,7 @@
 	<author>REDACTED, Abomination, T H E  S U S P E C T, A Random Cogboy, TwoLargeGayMen</author>
 	<packageId>REDACTED.Segmentum.Core</packageId>
 	<modVersion>1.0</modVersion>
-	<description>"Core Files for "Segmentum", a Warhammer 40.000 modding series by REDACTED.</description>
+	<description>This mod hosts dependancy files used in in a multitude of mods. No content is instruduced directly in the game, unless one of the dependant mods is enabled.\n\nCore is part of "Segmentum", a Warhammer 40.000 modding series by REDACTED</description>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
