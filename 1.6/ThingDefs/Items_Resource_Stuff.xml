@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- Adamantium -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Seg_Adamantium</defName>
+		<label>adamantium</label>
+		<description>An extremely rare, dense metal used for high-end armor and weapons.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Adamantium</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>2</Mass>
+			<StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.94</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0</commonality>
+			<isAirtight>true</isAirtight>
+			<allowedInStuffGeneration>false</allowedInStuffGeneration>
+			<color>(224,134,62)</color>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>1</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>3</WorkToMake>
+				<WorkToBuild>3</WorkToBuild>
+				<DoorOpenSpeed>1</DoorOpenSpeed>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+<!-- Ceramite -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>Seg_Ceramite</defName>
+		<label>Ceramite</label>
+		<description>A ceramic-metallic hyperalloy used in high-end armor applications. Tough yet lightweight, it conducts very little heat, and does not easily rupture or dent on impact.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Ceramite</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>3.20</MarketValue>
+			<Mass>1</Mass>
+			<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.1</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+			<SellPriceFactor>0.30</SellPriceFactor>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0</commonality>
+			<isAirtight>true</isAirtight>
+			<allowedInStuffGeneration>false</allowedInStuffGeneration>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(239,239,239)</color>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>3</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>1.3</WorkToMake>
+				<WorkToBuild>2</WorkToBuild>
+				<DoorOpenSpeed>1.5</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+</Defs>
