@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+   <Reference Include="0Harmony">
+    <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+  </Reference>
+  <Reference Include="UnityEngine.TextRenderingModule">
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+</Reference>
+ <Reference Include="Core40k">
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3267464767\1.6\Assemblies\Core40k.dll</HintPath>
+</Reference>
+  <Compile Include="RadHediffPatch.cs" />
+  <Compile Include="ImperialClock.cs" />
+  <Compile Include="SkillHeddifs.cs" />
+
+  </ItemGroup>
+</Project>
+
+

@@ -132,3 +132,14 @@ Source/obj/Debug/net48/SegCor.assets.cache
 Source/obj/Debug/net48/SegCor.AssemblyInfoInputs.cache
 Source/obj/Debug/net48/SegCor.AssemblyInfo.cs
 Source/ImperialClock.cs
+Source/bin/Debug/net48/Core40k.dll
+Source/obj/Debug/net48/SegCore.AssemblyInfo.cs
+Source/obj/Debug/net48/SegCore.AssemblyInfoInputs.cache
+Source/obj/Debug/net48/SegCore.assets.cache
+Source/obj/Debug/net48/SegCore.csproj.AssemblyReference.cache
+Source/obj/Debug/net48/SegCore.csproj.CoreCompileInputs.cache
+Source/obj/Debug/net48/SegCore.csproj.FileListAbsolute.txt
+Source/obj/Debug/net48/SegCore.GeneratedMSBuildEditorConfig.editorconfig
+Source/obj/SegCore.csproj.nuget.dgspec.json
+Source/obj/SegCore.csproj.nuget.g.props
+Source/obj/SegCore.csproj.nuget.g.targets
