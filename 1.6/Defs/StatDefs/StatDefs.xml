@@ -1,0 +1,87 @@
+<Defs>
+<StatDef>
+    <defName>ShootingSkillOffset</defName>
+    <label>shooting skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+
+<StatDef>
+    <defName>MeleeSkillOffset</defName>
+    <label>melee skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>ConstructionSkillOffset</defName>
+    <label>construction skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>MiningSkillOffset</defName>
+    <label>mining skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>CookingSkillOffset</defName>
+    <label>cooking skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>PlantsSkillOffset</defName>
+    <label>plants skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>AnimalsSkillOffset</defName>
+    <label>animals skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>CraftingSkillOffset</defName>
+    <label>crafting skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>ArtisticSkillOffset</defName>
+    <label>artistic skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>MedicineSkillOffset</defName>
+    <label>medicine skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>SocialSkillOffset</defName>
+    <label>social skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+<StatDef>
+    <defName>IntellectualSkillOffset</defName>
+    <label>intellectual skill offset</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+</StatDef>
+</Defs>
