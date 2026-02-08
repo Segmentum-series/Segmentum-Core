@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>Seg_Adamantium</defName>
 		<label>adamantium</label>
-		<description>An extremely rare, dense metal used for high-end armor and weapons.</description>
+		<description>An extremely rare, dense metal used for high-end armour and weapons.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Adamantium</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -60,7 +60,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>Seg_Ceramite</defName>
 		<label>Ceramite</label>
-		<description>A ceramic-metallic hyperalloy used in high-end armor applications. Tough yet lightweight, it conducts very little heat, and does not easily rupture or dent on impact.</description>
+		<description>A ceramic-metallic hyperalloy used in high-end armour applications. Tough yet lightweight, it conducts very little heat, and does not easily rupture or dent on impact.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Ceramite</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
