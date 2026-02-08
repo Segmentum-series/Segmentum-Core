@@ -5,6 +5,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+    <description>Offset to the base shooting skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 
 <StatDef>
@@ -13,6 +14,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base melee skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>ConstructionSkillOffset</defName>
@@ -20,6 +22,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base construction skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>MiningSkillOffset</defName>
@@ -27,6 +30,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+    <description>Offset to the base mining skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>CookingSkillOffset</defName>
@@ -34,6 +38,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base cooking skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>PlantsSkillOffset</defName>
@@ -41,6 +46,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base plants skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>AnimalsSkillOffset</defName>
@@ -48,6 +54,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base animals skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>CraftingSkillOffset</defName>
@@ -55,6 +62,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base crafting skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>ArtisticSkillOffset</defName>
@@ -62,6 +70,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base artistic skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>MedicineSkillOffset</defName>
@@ -69,6 +78,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base medicine skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>SocialSkillOffset</defName>
@@ -76,6 +86,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base social skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
     <defName>IntellectualSkillOffset</defName>
@@ -83,5 +94,6 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <description>Offset to the base intellectual skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 </Defs>
