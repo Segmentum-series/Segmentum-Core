@@ -25,11 +25,12 @@
     <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
 </Reference>
  <Reference Include="Core40k">
-    <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3267464767\1.6\Assemblies\Core40k.dll</HintPath>
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40kFramework\1.6\Assemblies\Core40k.dll</HintPath>
 </Reference>
   <Compile Include="RadHediffPatch.cs" />
   <Compile Include="ImperialClock.cs" />
   <Compile Include="SkillHeddifs.cs" />
+  <Compile Include="HeddiffGivesAbility.cs" />
 
   </ItemGroup>
 </Project>
