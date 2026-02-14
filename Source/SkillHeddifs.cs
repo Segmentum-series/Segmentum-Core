@@ -98,5 +98,65 @@ public class SkillOffsetEntry
                 }
             }
         }
+    public class ThoughtWorker_DivineSilicion : ThoughtWorker_Precept
+    {
+        protected override ThoughtState ShouldHaveThought(Pawn p)
+        {
+            if (p.Map == null) return ThoughtState.Inactive;
+
+            int count = 0;
+
+            foreach (Thing t in p.Map.listerBuildings.allBuildingsColonist)
+            {
+                ThingDef d = t.def;
+
+                if (d.building == null) continue;
+                if (d.building.buildingTags == null) continue;
+
+                // must be in Production tab
+                if (!d.building.buildingTags.Contains("Production")) continue;
+
+                // must be Industrial tech level or above
+                if (d.techLevel < TechLevel.Industrial) continue;
+
+                count++;
+            }
+
+            if (count == 0) return ThoughtState.ActiveAtStage(0);
+            if (count <= 2) return ThoughtState.ActiveAtStage(1);
+            if (count <= 4) return ThoughtState.ActiveAtStage(2);
+            return ThoughtState.ActiveAtStage(3);
+        }
     }
+}
+ public class ThoughtWorker_DivineSilicion : ThoughtWorker_Precept
+    {
+        protected override ThoughtState ShouldHaveThought(Pawn p)
+        {
+            if (p.Map == null) return ThoughtState.Inactive;
+
+            int count = 0;
+
+            foreach (Thing t in p.Map.listerBuildings.allBuildingsColonist)
+            {
+                ThingDef d = t.def;
+
+                if (d.building == null) continue;
+                if (d.building.buildingTags == null) continue;
+
+                // must be in Production tab
+                if (!d.building.buildingTags.Contains("Production")) continue;
+
+                // must be Industrial tech level or above
+                if (d.techLevel < TechLevel.Industrial) continue;
+
+                count++;
+            }
+
+            if (count == 0) return ThoughtState.ActiveAtStage(0);
+            if (count <= 2) return ThoughtState.ActiveAtStage(1);
+            if (count <= 4) return ThoughtState.ActiveAtStage(2);
+            return ThoughtState.ActiveAtStage(3);
+        }
+}
 }

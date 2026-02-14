@@ -4,13 +4,13 @@ Source/obj/PhosphorFire.csproj.nuget.dgspec.json
 Source/obj/PhosphorFire.csproj.nuget.g.props
 Source/obj/PhosphorFire.csproj.nuget.g.targets
 Source/obj/project.assets.json
-Source/obj/project.nuget.cache
+Source/obj/project.nuget.cache 
 Source/obj/Debug/net48/.NETFramework,Version=v4.8.AssemblyAttributes.cs
 Source/obj/Debug/net48/PhosphorFire.assets.cache
 Source/obj/Debug/net48/PhosphorFire.csproj.AssemblyReference.cache
 Source/obj/Debug/net48/PhosphorFire.GeneratedMSBuildEditorConfig.editorconfig
 Source/PhosphorFire.csproj
-Source/Thing_PhosphorFire.cs
+
 Source/bin/Debug/net48/0Harmony.dll
 Source/bin/Debug/net48/Assembly-CSharp-firstpass.dll
 Source/bin/Debug/net48/Assembly-CSharp.dll
@@ -131,7 +131,6 @@ Source/obj/Debug/net48/SegCor.csproj.AssemblyReference.cache
 Source/obj/Debug/net48/SegCor.assets.cache
 Source/obj/Debug/net48/SegCor.AssemblyInfoInputs.cache
 Source/obj/Debug/net48/SegCor.AssemblyInfo.cs
-Source/ImperialClock.cs
 Source/bin/Debug/net48/Core40k.dll
 Source/obj/Debug/net48/SegCore.AssemblyInfo.cs
 Source/obj/Debug/net48/SegCore.AssemblyInfoInputs.cache
