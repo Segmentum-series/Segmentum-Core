@@ -4,6 +4,8 @@ using System.Text;
 using System.Linq;
 using Core40k;
 using System.Collections.Generic;
+using HarmonyLib;
+
  
 
 namespace Seg{
@@ -98,28 +100,34 @@ public class SkillOffsetEntry
                 }
             }
         }
-    public class ThoughtWorker_DivineSilicion : ThoughtWorker_Precept
+    }
+      public class ThoughtWorker_DivineSilicion : ThoughtWorker_Precept
     {
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
-            if (p.Map == null) return ThoughtState.Inactive;
+            if (p.Map == null)
+                return ThoughtState.Inactive;
 
             int count = 0;
 
-            foreach (Thing t in p.Map.listerBuildings.allBuildingsColonist)
+            foreach (Building b in p.Map.listerBuildings.allBuildingsColonist)
             {
-                ThingDef d = t.def;
+                ThingDef d = b.def;
+                if (d == null)
+                    continue;
 
-                if (d.building == null) continue;
-                if (d.building.buildingTags == null) continue;
+                var tc = d.thingClass;
+                if (tc == null)
+                    continue;
 
-                // must be in Production tab
-                if (!d.building.buildingTags.Contains("Production")) continue;
-
-                // must be Industrial tech level or above
-                if (d.techLevel < TechLevel.Industrial) continue;
-
-                count++;
+                if (typeof(Building_WorkTable).IsAssignableFrom(tc) ||
+                    typeof(Building_WorkTable_HeatPush).IsAssignableFrom(tc) ||
+                    typeof(Building_ResearchBench).IsAssignableFrom(tc) ||
+                    typeof(Building_PlantGrower).IsAssignableFrom(tc) ||
+                    typeof(Building_NutrientPasteDispenser).IsAssignableFrom(tc))
+                {
+                    count++;
+                }
             }
 
             if (count == 0) return ThoughtState.ActiveAtStage(0);
@@ -128,35 +136,50 @@ public class SkillOffsetEntry
             return ThoughtState.ActiveAtStage(3);
         }
     }
-}
- public class ThoughtWorker_DivineSilicion : ThoughtWorker_Precept
+
+[StaticConstructorOnStartup]
+    public static class DivineSilicion_Harmony
     {
-        protected override ThoughtState ShouldHaveThought(Pawn p)
+        static DivineSilicion_Harmony()
         {
-            if (p.Map == null) return ThoughtState.Inactive;
-
-            int count = 0;
-
-            foreach (Thing t in p.Map.listerBuildings.allBuildingsColonist)
-            {
-                ThingDef d = t.def;
-
-                if (d.building == null) continue;
-                if (d.building.buildingTags == null) continue;
-
-                // must be in Production tab
-                if (!d.building.buildingTags.Contains("Production")) continue;
-
-                // must be Industrial tech level or above
-                if (d.techLevel < TechLevel.Industrial) continue;
-
-                count++;
-            }
-
-            if (count == 0) return ThoughtState.ActiveAtStage(0);
-            if (count <= 2) return ThoughtState.ActiveAtStage(1);
-            if (count <= 4) return ThoughtState.ActiveAtStage(2);
-            return ThoughtState.ActiveAtStage(3);
+            new Harmony("Seg.DivineSilicion").PatchAll();
         }
-}
+    }
+
+    [HarmonyPatch(typeof(Thing), nameof(Thing.SpawnSetup))]
+    public static class DivineSilicion_SpawnPatch
+    {
+        static void Postfix(Thing __instance)
+        {
+            if (__instance is Building b)
+                DivineSilicion_RefreshUtil.RefreshColonists(b.Map);
+        }
+    }
+
+    [HarmonyPatch(typeof(Thing), nameof(Thing.DeSpawn))]
+    public static class DivineSilicion_DespawnPatch
+    {
+        static void Prefix(Thing __instance)
+        {
+            if (__instance is Building b)
+                DivineSilicion_RefreshUtil.RefreshColonists(b.Map);
+        }
+    }
+
+    public static class DivineSilicion_RefreshUtil
+    {
+        public static void RefreshColonists(Map map)
+        {
+            if (map == null)
+                return;
+
+            List<Pawn> pawns = map.mapPawns.FreeColonistsSpawned;
+
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                Pawn p = pawns[i];
+                p.needs?.mood?.thoughts?.situational?.Notify_SituationalThoughtsDirty();
+            }
+        }
+    }
 }
