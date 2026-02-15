@@ -11,58 +11,67 @@ using HarmonyLib;
 namespace Seg{
 
  public class HediffComp_SkillOffset : HediffComp
+{
+    private Dictionary<SkillDef, int> applied = new Dictionary<SkillDef, int>();
+
+    public HediffCompProperties_SkillOffset Props =>
+        (HediffCompProperties_SkillOffset)props;
+
+    public override void CompExposeData()
     {
-        private bool applied = false;
+        base.CompExposeData();
+        Scribe_Collections.Look(ref applied, "applied", LookMode.Def, LookMode.Value);
+    }
 
-        public HediffCompProperties_SkillOffset Props =>
-            (HediffCompProperties_SkillOffset)props;
+    public override void CompPostMake()
+    {
+        base.CompPostMake();
+        ApplyOffsets();
+    }
 
-        public override void CompPostMake()
+    public override void CompPostPostAdd(DamageInfo? dinfo)
+    {
+        base.CompPostPostAdd(dinfo);
+        ApplyOffsets();
+    }
+
+    public override void CompPostPostRemoved()
+    {
+        base.CompPostPostRemoved();
+        RemoveOffsets();
+    }
+
+    private void ApplyOffsets()
+    {
+        foreach (var entry in Props.skills)
         {
-            base.CompPostMake();
-            Apply();
-        }
+            var skill = Pawn.skills?.GetSkill(entry.skill);
+            if (skill == null) continue;
 
-        public override void CompPostPostAdd(DamageInfo? dinfo)
-        {
-            base.CompPostPostAdd(dinfo);
-            Apply();
-        }
+            applied.TryGetValue(entry.skill, out int alreadyApplied);
 
-        public override void CompPostPostRemoved()
-        {
-            base.CompPostPostRemoved();
-            Remove();
-        }
-
-        private void Apply()
-        {
-            if (applied) return;
-
-            foreach (var entry in Props.skills)
+            int needed = entry.offset - alreadyApplied;
+            if (needed != 0)
             {
-                var skill = Pawn.skills?.GetSkill(entry.skill);
-                if (skill != null)
-                    skill.Level += entry.offset;
+                skill.Level += needed;
+                applied[entry.skill] = entry.offset;
             }
-
-            applied = true;
-        }
-
-        private void Remove()
-        {
-            if (!applied) return;
-
-            foreach (var entry in Props.skills)
-            {
-                var skill = Pawn.skills?.GetSkill(entry.skill);
-                if (skill != null)
-                    skill.Level -= entry.offset;
-            }
-
-            applied = false;
         }
     }
+
+    private void RemoveOffsets()
+    {
+        foreach (var kv in applied)
+        {
+            var skill = Pawn.skills?.GetSkill(kv.Key);
+            if (skill != null)
+                skill.Level -= kv.Value;
+        }
+
+        applied.Clear();
+    }
+}
+
 
 public class SkillOffsetEntry
     {
