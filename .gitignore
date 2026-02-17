@@ -145,3 +145,7 @@ Source/obj/SegCore.csproj.nuget.g.targets
 Source/obj/Debug/net48/SegCore.csproj.Up2Date
 Source/obj/Debug/net48/SegCore.pdb
 Source/obj/Debug/net48/SegCore.sourcelink.json
+Source/bin/Debug/net48/0PrepatcherAPI.dll
+Source/bin/Debug/net48/KCSG.dll
+Source/bin/Debug/net48/PipeSystem.dll
+Source/bin/Debug/net48/VEF.dll

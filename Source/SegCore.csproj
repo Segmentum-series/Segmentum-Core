@@ -27,6 +27,10 @@
  <Reference Include="Core40k">
     <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40kFramework\1.6\Assemblies\Core40k.dll</HintPath>
 </Reference>
+<Reference Include="VEF">
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll </HintPath>
+</Reference>
+
   <Compile Include="RadHediffPatch.cs" />
   <Compile Include="ImperialClock.cs" />
   <Compile Include="SkillHeddifs.cs" />
