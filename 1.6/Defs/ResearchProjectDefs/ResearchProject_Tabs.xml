@@ -3,5 +3,7 @@
 	<ResearchTabDef>
 		<defName>Seg_SegmentumTab</defName>
 		<label>Segmentum</label>
+        <generalTitle>Segmentum research projects</generalTitle>
+        <generalDescription>Unlock new technologies from the various factions of the Segmentum series by researching at a research bench.</generalDescription>
 	</ResearchTabDef>
 </Defs>
