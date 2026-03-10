@@ -1,0 +1,55 @@
+<Defs>
+<DamageDef ParentName="Bullet">
+		<defName>Seg_MeltaDamage</defName>
+		<label>Melta burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<armorCategory>Heat</armorCategory>
+		<hediff>Shredded</hediff>
+		<deathMessage>{0} was melted into a pile of flesh and slag.</deathMessage>
+		<impactSoundType>Electric</impactSoundType>
+		<defaultArmorPenetration>2.0</defaultArmorPenetration>
+	</DamageDef>
+<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_MeltaBeam</defName>
+  		<label>melta beam</label>
+  		<description>a sustained beam of heat. good for melting armour.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_MeltaBeam2</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_MeltaDamage</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>20</lifetimeTicks>
+
+				<beamWidth>2</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0.1</sweepRatePerTick>
+				<maxSweepAngle>1</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+    </Defs>
