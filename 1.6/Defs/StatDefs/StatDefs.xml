@@ -5,6 +5,8 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+    <showIfUndefined>false</showIfUndefined>
+
     <description>Offset to the base shooting skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 
@@ -13,6 +15,7 @@
     <label>melee skill offset</label>
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
+        <showIfUndefined>false</showIfUndefined>
     <toStringStyle>Integer</toStringStyle>
         <description>Offset to the base melee skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
@@ -21,6 +24,7 @@
     <label>construction skill offset</label>
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
+        <showIfUndefined>false</showIfUndefined>
     <toStringStyle>Integer</toStringStyle>
         <description>Offset to the base construction skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
@@ -29,6 +33,7 @@
     <label>mining skill offset</label>
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
+        <showIfUndefined>false</showIfUndefined>
     <toStringStyle>Integer</toStringStyle>
     <description>Offset to the base mining skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
@@ -37,6 +42,7 @@
     <label>cooking skill offset</label>
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
+        <showIfUndefined>false</showIfUndefined>
     <toStringStyle>Integer</toStringStyle>
         <description>Offset to the base cooking skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
@@ -45,6 +51,7 @@
     <label>plants skill offset</label>
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
+        <showIfUndefined>false</showIfUndefined>
     <toStringStyle>Integer</toStringStyle>
         <description>Offset to the base plants skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
@@ -54,6 +61,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
         <description>Offset to the base animals skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
@@ -62,6 +70,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
         <description>Offset to the base crafting skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
@@ -70,6 +79,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
         <description>Offset to the base artistic skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
@@ -78,6 +88,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
         <description>Offset to the base medicine skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
@@ -86,6 +97,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
         <description>Offset to the base social skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 <StatDef>
@@ -94,6 +106,7 @@
     <category>BasicsPawn</category>
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>Integer</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
         <description>Offset to the base intellectual skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
 </Defs>
