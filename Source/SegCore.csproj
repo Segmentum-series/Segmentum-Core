@@ -35,6 +35,7 @@
   <Compile Include="ImperialClock.cs" />
   <Compile Include="SkillHeddifs.cs" />
   <Compile Include="HeddiffGivesAbility.cs" />
+  <Compile Include="RenderPawnNodeGun.cs" />
 
   </ItemGroup>
 </Project>
