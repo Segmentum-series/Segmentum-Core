@@ -1,14 +1,11 @@
-using RimWorld;
-using Verse;
-using System.Reflection;
-using System.Collections.Generic;
 using VEF.Abilities;
+using Verse;
 
 namespace Seg
 {
     public class HediffComp_GivesAbility : HediffComp
     {
-        public HediffCompProperties_GivesAbility Props => (HediffCompProperties_GivesAbility)props;
+        private HediffCompProperties_GivesAbility Props => (HediffCompProperties_GivesAbility)props;
 
         public override void CompPostPostAdd(DamageInfo? dinfo)
         {
@@ -42,21 +39,7 @@ namespace Seg
             if (Props.vefAbility != null)
             {
                 var comp = Pawn.GetComp<CompAbilities>();
-                if (comp == null)
-                    return;
-
-                var field = typeof(CompAbilities).GetField(
-                    "learnedAbilities",
-                    BindingFlags.NonPublic | BindingFlags.Instance);
-
-                if (field == null)
-                    return;
-
-                var list = field.GetValue(comp) as List<VEF.Abilities.Ability>;
-                if (list == null)
-                    return;
-
-                list.RemoveAll(a => a.def == Props.vefAbility);
+                comp?.LearnedAbilities.RemoveAll(a => a.def == Props.vefAbility);
             }
         }
     }
@@ -64,7 +47,7 @@ namespace Seg
     public class HediffCompProperties_GivesAbility : HediffCompProperties
     {
         public RimWorld.AbilityDef vanillaAbility;
-        public VEF.Abilities.AbilityDef vefAbility;
+        public AbilityDef vefAbility;
 
         public HediffCompProperties_GivesAbility()
         {
