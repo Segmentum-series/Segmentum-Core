@@ -1,5 +1,9 @@
 using RimWorld;
 using Verse;
+using Core40k;
+using HarmonyLib;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace seg
 {
@@ -17,13 +21,60 @@ namespace seg
         {
             base.CompPostPostAdd(dinfo);
 
-            Pawn pawn = Pawn;
-            if (pawn == null || pawn.Dead) return;
+                Pawn pawn = Pawn;
+                if (pawn == null || pawn.Dead) 
+                    return;
 
-            // Shave hair once
-            pawn.story.hairDef = HairDefOf.Bald;
-            // Shave beard once
-            pawn.style.beardDef = BeardDefOf.NoBeard;
-        }
+                if (pawn.story != null)
+                    pawn.story.hairDef = HairDefOf.Bald;
+
+                if (ModsConfig.IdeologyActive && pawn.style != null)
+                    pawn.style.beardDef = BeardDefOf.NoBeard;
+                    }
     }
+[HarmonyPatch(typeof(DynamicPawnRenderNodeSetup_DecorativeAddons), "GetDynamicNodes")]
+public static class Patch_DecorativeAddons_GetDynamicNodes
+{
+    [HarmonyPrefix]
+    public static bool Prefix(Pawn pawn, PawnRenderTree tree, ref IEnumerable<(PawnRenderNode node, PawnRenderNode parent)> __result)
+    {
+        if (pawn == null)
+        {
+            __result = Enumerable.Empty<(PawnRenderNode, PawnRenderNode)>();
+            return false;
+        }
+
+        if (pawn.apparel == null || pawn.apparel.WornApparelCount == 0)
+            return true;
+
+        if (pawn.story == null)
+        {
+            __result = Enumerable.Empty<(PawnRenderNode, PawnRenderNode)>();
+            return false;
+        }
+
+        foreach (var apparel in pawn.apparel.WornApparel)
+        {
+            var decorativeComp = apparel.GetComp<CompDecorative>();
+            if (decorativeComp == null) continue;
+
+            if (decorativeComp.ExtraDecorations == null)
+            {
+                __result = Enumerable.Empty<(PawnRenderNode, PawnRenderNode)>();
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+[StaticConstructorOnStartup]
+public static class SegCore_Startup
+{
+    static SegCore_Startup()
+    {
+        var harmony = new Harmony("seg.core");
+        harmony.PatchAll();
+    }
+}
 }
