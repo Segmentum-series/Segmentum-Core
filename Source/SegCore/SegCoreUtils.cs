@@ -44,15 +44,9 @@ public static class SegCoreUtils
         return $"{num:000}.{effectiveMillenniumLabel}";
     }
     
-    public static bool AlreadyHasArmHediff(Pawn pawn)
+    public static bool ShouldFlipArmGraphic(Hediff hediff)
     {
-        return pawn?.health?.hediffSet != null && pawn.health.hediffSet.hediffs.Any(pawnHediff => pawnHediff.def.HasModExtension<ArmTextureExtension>());
-    }
-    
-    public static bool ShouldFlipArmGraphic(Pawn pawn, Hediff hediff)
-    {
-        //Checks if the pawns already has another arm and that this arm is the left one before flipping. (hediff.part gives the arm bodypart and the left bodyparts all have the flipGraphic set to true for them)
-        return AlreadyHasArmHediff(pawn) && hediff.Part.flipGraphic;
+        return hediff.Part.flipGraphic;
     }
 }
 

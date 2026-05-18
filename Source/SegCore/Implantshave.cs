@@ -5,33 +5,38 @@ using HarmonyLib;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace seg
+namespace seg;
+
+public class HediffCompProperties_ImplantShave : HediffCompProperties
 {
-    public class HediffCompProperties_ImplantShave : HediffCompProperties
+    public HediffCompProperties_ImplantShave()
     {
-        public HediffCompProperties_ImplantShave()
+        compClass = typeof(HediffComp_ImplantShave);
+    }
+}
+
+public class HediffComp_ImplantShave : HediffComp
+{
+    public override void CompPostPostAdd(DamageInfo? dinfo)
+    {
+        base.CompPostPostAdd(dinfo);
+
+        var pawn = Pawn;
+        if (pawn == null || pawn.Dead)
         {
-            compClass = typeof(HediffComp_ImplantShave);
+            return;
+        }
+
+        pawn.story?.hairDef = HairDefOf.Bald;
+
+
+        if (ModsConfig.IdeologyActive && pawn.style != null)
+        {
+            pawn.style.beardDef = BeardDefOf.NoBeard;
         }
     }
-
-    public class HediffComp_ImplantShave : HediffComp
-    {
-        public override void CompPostPostAdd(DamageInfo? dinfo)
-        {
-            base.CompPostPostAdd(dinfo);
-
-                Pawn pawn = Pawn;
-                if (pawn == null || pawn.Dead) 
-                    return;
-
-                if (pawn.story != null)
-                    pawn.story.hairDef = HairDefOf.Bald;
-
-                if (ModsConfig.IdeologyActive && pawn.style != null)
-                    pawn.style.beardDef = BeardDefOf.NoBeard;
-                    }
-    }
+}
+    
 [HarmonyPatch(typeof(DynamicPawnRenderNodeSetup_DecorativeAddons), "GetDynamicNodes")]
 public static class Patch_DecorativeAddons_GetDynamicNodes
 {
@@ -56,7 +61,10 @@ public static class Patch_DecorativeAddons_GetDynamicNodes
         foreach (var apparel in pawn.apparel.WornApparel)
         {
             var decorativeComp = apparel.GetComp<CompDecorative>();
-            if (decorativeComp == null) continue;
+            if (decorativeComp == null)
+            {
+                continue;
+            }
 
             if (decorativeComp.ExtraDecorations == null)
             {
@@ -67,14 +75,4 @@ public static class Patch_DecorativeAddons_GetDynamicNodes
 
         return true;
     }
-}
-[StaticConstructorOnStartup]
-public static class SegCore_Startup
-{
-    static SegCore_Startup()
-    {
-        var harmony = new Harmony("seg.core");
-        harmony.PatchAll();
-    }
-}
 }

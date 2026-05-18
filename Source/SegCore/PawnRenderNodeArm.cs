@@ -1,3 +1,5 @@
+using System.Linq;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -10,7 +12,7 @@ public class PawnRenderNodeWorker_Arm : PawnRenderNodeWorker
     public override Vector3 OffsetFor(PawnRenderNode node, PawnDrawParms parms, out Vector3 pivot)
     {
         var baseVector = base.OffsetFor(node, parms, out pivot);
-        if (SegCoreUtils.AlreadyHasArmHediff(parms.pawn))
+        if ((SegCoreUtils.ShouldFlipArmGraphic(node.hediff) && parms.pawn.Rotation == Rot4.West) || (!SegCoreUtils.ShouldFlipArmGraphic(node.hediff) && parms.pawn.Rotation == Rot4.East))
         {
             baseVector.y += 1;
         }
@@ -20,27 +22,46 @@ public class PawnRenderNodeWorker_Arm : PawnRenderNodeWorker
 
     public override bool CanDrawNow(PawnRenderNode node, PawnDrawParms parms)
     {
-        if (SegCoreUtils.ShouldFlipArmGraphic(parms.pawn, node.hediff))
+        if (SegCoreUtils.ShouldFlipArmGraphic(node.hediff))
         {
-            node.Props.side = PawnRenderNodeProperties.Side.Left;
+            node.Props.side = PawnRenderNodeProperties.Side.Left;   
         }
-        return base.CanDrawNow(node, parms);
+        
+        if (!node.Props.rotDrawMode.HasFlag(parms.rotDrawMode))
+        {
+            return false;
+        }
+        if (node.Props.visibleFacing != null && !node.Props.visibleFacing.Contains(parms.facing))
+        {
+            return false;
+        }
+        if (node.Props.skipFlag != RenderSkipFlagDefOf.None && parms.skipFlags.HasFlag(node.Props.skipFlag))
+        {
+            return false;
+        }
+        if (node.bodyPart?.visibleHediffRots != null && !node.bodyPart.visibleHediffRots.Contains(parms.facing))
+        {
+            return false;
+        }
+        if (node.Props.linkedBodyPartsGroup != null && !parms.pawn.health.hediffSet.GetNotMissingParts().Any(x => x.groups.NotNullAndContains(node.Props.linkedBodyPartsGroup)))
+        {
+            return false;
+        }
+        return node.DebugEnabled;
     }
 }
 
 public class PawnRenderNode_Arm : PawnRenderNode
 {
-    public PawnRenderNode_Arm(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
-        : base(pawn, props, tree)
+    public PawnRenderNode_Arm(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree) : base(pawn, props, tree)
     {
     }
 
     public override bool FlipGraphic(PawnDrawParms parms)
     {
-        var shouldFlip = SegCoreUtils.ShouldFlipArmGraphic(parms.pawn, hediff);
-        if (shouldFlip && parms.facing == Rot4.West)
+        var shouldFlip = SegCoreUtils.ShouldFlipArmGraphic(hediff);
+        if (shouldFlip && (parms.facing == Rot4.West || parms.facing == Rot4.East))
         {
-            //Due to how flipping works it'll flip wrongly on the west side so we need to adjust for that specific pawn facing
             shouldFlip = false;
         }
         
