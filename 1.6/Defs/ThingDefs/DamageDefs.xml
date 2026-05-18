@@ -37,6 +37,12 @@
 			<li Class="taranchuk_lasers.LaserProperties">
 				<damageTickRate>10</damageTickRate>
 				<lifetimeTicks>20</lifetimeTicks>
+				<chainRange>0</chainRange>
+				<maxChainTargets>0</maxChainTargets>
+				<chainDelayTicks>100000</chainDelayTicks>
+				<chainToAnything>false</chainToAnything>
+				<maxBranches>0</maxBranches>
+				<branchChance>0</branchChance>
 
 				<beamWidth>2</beamWidth>
 				<beamWidthDrawScale>2.5</beamWidthDrawScale>
