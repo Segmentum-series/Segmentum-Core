@@ -6,22 +6,4 @@
         <generalTitle>Segmentum research projects</generalTitle>
         <generalDescription>Unlock new technologies from the various factions of the Segmentum series by researching at a research bench.</generalDescription>
 	</ResearchTabDef>
-	<!-- Plasma induction -->
-	<ResearchProjectDef>
-		<defName>Seg_PlasmaInduction</defName><!-- To be moved later -->
-		<label>plasma induction</label>
-		<description>Be granted the consecrated rites of plasma induction, allowing the containment and manipulation of extreme thermal energies for use in weapon systems, power generation, and advanced industrial applications.</description>
-		<baseCost>2500</baseCost>
-		<techLevel>Spacer</techLevel>
-			<researchViewX>19.00</researchViewX>
-			<researchViewY>1.80</researchViewY>
-		<prerequisites>
-			<li>AdvancedFabrication</li>
-			<li>Batteries</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-	</ResearchProjectDef>
 </Defs>
