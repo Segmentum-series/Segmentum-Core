@@ -61,6 +61,10 @@
           <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
           <Private>False</Private>
         </Reference>
+        <Reference Include="taranchuk_lasers">
+          <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3047564391\1.6\Assemblies\taranchuk_lasers.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Harmony\Harmony_DateReadoutStringAt.cs" />
@@ -74,6 +78,7 @@
         <Compile Include="SkillHeddifs.cs" />
         <Compile Include="PawnRenderNodeArm.cs" />
         <Compile Include="Implantshave.cs" />
+        <Compile Include="LaserProjectileSpawnFilth.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
