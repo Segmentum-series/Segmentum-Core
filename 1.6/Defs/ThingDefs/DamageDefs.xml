@@ -58,4 +58,32 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<DamageDef Name="Seg_VIND_ShieldBreakerExplosion">
+		<defName>Seg_VIND_ShieldBreakerExplosion</defName>
+		<label>ShieldBreakerExplosion</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>50</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorCenter>(0.3, 0.6, 1.0)</explosionColorCenter>
+		<explosionColorEdge>(0.1, 0.25, 0.6)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
     </Defs>
