@@ -1,0 +1,84 @@
+<Defs>
+<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Seg_Gun_MarsLasgun</defName>
+		<label>Lasgun (Mars-pattern)</label>
+		<description>Like all lasguns, the Mars-pattern is not the most powerful firearm, but it is reliable, logistically simple, and can stop a charging greenskin at fifty paces with an accurate grouping of lasbolts. This is one of the oldest patterns of lasgun still in use in the Imperium, and is still frequently found in the hands of noble retinues or Inquisition warbands as well as seeing continuing use by forces supplied by the forge world of Mars.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_Ranged_MarsLasgun</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+        <recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_ImperialCraftingTable</li>
+			</recipeUsers>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+        <tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+        <weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+		<uiIconScale>1</uiIconScale>
+		<statBases>
+			<Mass>9</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<WorkToMake>80000</WorkToMake>
+			<MarketValue>2530</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_MarsLasgunShot</defaultProjectile>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<warmupTime>1</warmupTime>
+				<range>28.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+		</modExtensions>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_WOTV_Las</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_WOTV_Las</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

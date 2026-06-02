@@ -1,0 +1,106 @@
+<Defs>
+	<WorkGiverDef><!-- Forge altar work giver-->
+		<defName>Seg_WorkGiver_ImperialCraftingTable</defName>
+		<label>make things at imperial forge altar</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>75</priorityInType>
+		<verb>work at</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<fixedBillGiverDefs>
+			<li>Seg_ImperialCraftingTable</li>
+		</fixedBillGiverDefs>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Seg_ImperialCraftingTable</defName>
+		<label>imperial forge altar</label>
+		<description>A workbench of the Imperium, equipped with advanced tools and monitoring devices for the production and maintenance of advanced equipment.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<minifiedDef />
+		<thingCategories Inherit="false" />
+		<size>(4,2)</size>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipes><!-- Apparels and weapon recipes are set on their respective defs -->
+			<li>ExtractMetalFromSlag</li>
+			<li>SmeltWeapon</li>
+			<li>SmeltApparel</li>
+			<li>DestroyWeapon</li>
+			<li>DestroyApparel</li>
+			<!--<li>Seg_SmeltNonSmeltable</li>
+			<li>Seg_SmeltNonSmeltableLowTier</li>-->
+		</recipes>
+		<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>500</basePowerConsumption>
+			<shortCircuitInRain>true</shortCircuitInRain>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<graphicData>
+			<texPath>Things/Building/CraftingTable/Seg_ImperialCraftingTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<inspectorTabs>
+		<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Fabrication</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AllowColoringOfThings">
+				<allowColoringOfApparel>true</allowColoringOfApparel>
+				<allowColoringOfEquipment>true</allowColoringOfEquipment>
+			</li>
+            <!--<li Class="VEF.Buildings.RecipeInheritanceExtension">
+                <inheritRecipesFrom>
+                    <li>FabricationBench</li>
+                </inheritRecipesFrom>
+            </li>-->
+		</modExtensions>
+	</ThingDef>
+
+</Defs>
