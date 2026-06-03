@@ -1,7 +1,7 @@
 <Defs>
 	<WorkGiverDef><!-- Forge altar work giver-->
 		<defName>Seg_WorkGiver_ImperialCraftingTable</defName>
-		<label>make things at imperial forge altar</label>
+		<label>make things at Imperial workbench</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Smithing</workType>
 		<priorityInType>75</priorityInType>
@@ -18,8 +18,8 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>Seg_ImperialCraftingTable</defName>
-		<label>imperial forge altar</label>
-		<description>A workbench of the Imperium, equipped with advanced tools and monitoring devices for the production and maintenance of advanced equipment.</description>
+		<label>Imperial workbench</label>
+		<description>A standard workbench commonly seen in the Imperium of Man, equipped with tools and devices for the production of Imperial equipment.\n\nThe Adeptus Mechanicus keeps a tight grip on technology and manufacture throughout Imperial worlds, but the necessities of keeping such a vast empire ticking over mean that they will sanction and legitimise third parties to perform engineering and production work as well, as long as they adhere to Mechanicus strictures and practices.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -33,14 +33,10 @@
 		<thingCategories Inherit="false" />
 		<size>(4,2)</size>
 		<costList>
-			<Steel>200</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer>
+			<Steel>180</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<recipes><!-- Apparels and weapon recipes are set on their respective defs -->
-			<li>ExtractMetalFromSlag</li>
-			<li>SmeltWeapon</li>
-			<li>SmeltApparel</li>
 			<li>DestroyWeapon</li>
 			<li>DestroyApparel</li>
 			<!--<li>Seg_SmeltNonSmeltable</li>
@@ -88,7 +84,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>Fabrication</li>
+			<li>Machining</li>
 		</researchPrerequisites>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AllowColoringOfThings">
