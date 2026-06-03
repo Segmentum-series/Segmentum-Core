@@ -10,7 +10,7 @@
 			<drawSize>1.3</drawSize>
 		</graphicData>
         <recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite>Seg_MunitorumEquipment</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>Seg_ImperialCraftingTable</li>
 			</recipeUsers>

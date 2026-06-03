@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- Main research tree -->
+
+<!-- Segmentum research tree -->
+	
+<!-- Lasgun -->
+<ResearchProjectDef>
+		<defName>Seg_MunitorumEquipment</defName>
+		<label>Munitorum Equipment</label>
+		<description>Prepare for local production of basic Imperial military equipment according to Departmento Munitorum patterns, such as the ubiquitous lasgun.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.8</researchViewY>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+		<tab>Seg_SegmentumTab</tab>
+	</ResearchProjectDef>
+	
+</Defs>
