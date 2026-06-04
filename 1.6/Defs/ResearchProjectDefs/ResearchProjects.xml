@@ -4,7 +4,7 @@
 
 <!-- Segmentum research tree -->
 	
-<!-- Lasgun -->
+<!-- Munitorum Equipment -->
 <ResearchProjectDef>
 		<defName>Seg_MunitorumEquipment</defName>
 		<label>Munitorum equipment</label>
@@ -14,7 +14,7 @@
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.4</researchViewY>
 		<prerequisites>
-			<li>Machining</li>
+			<li>Gunsmithing</li>
 		</prerequisites>
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
