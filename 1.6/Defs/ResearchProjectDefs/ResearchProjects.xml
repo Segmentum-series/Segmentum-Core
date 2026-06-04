@@ -7,8 +7,8 @@
 <!-- Lasgun -->
 <ResearchProjectDef>
 		<defName>Seg_MunitorumEquipment</defName>
-		<label>Munitorum Equipment</label>
-		<description>Prepare for local production of basic Imperial military equipment according to Departmento Munitorum patterns, such as the ubiquitous lasgun.</description>
+		<label>Munitorum equipment</label>
+		<description>Prepare for local production of basic Imperial military equipment according to patterns approved by the Departmento Munitorum, such as the ubiquitous lasgun.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>0</researchViewX>
