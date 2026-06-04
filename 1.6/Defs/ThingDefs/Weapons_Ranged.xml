@@ -75,10 +75,10 @@
 		</modExtensions>
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li>Seg_WOTV_Las</li>
+			<li>Seg_Core_Las</li>
 		</weaponTags>
 		<tradeTags>
-			<li>Seg_WOTV_Las</li>
+			<li>Seg_Core_Las</li>
 		</tradeTags>
 	</ThingDef>
 </Defs>
