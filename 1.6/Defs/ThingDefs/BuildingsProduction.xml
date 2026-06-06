@@ -39,6 +39,8 @@
 		<recipes><!-- Apparels and weapon recipes are set on their respective defs -->
 			<li>DestroyWeapon</li>
 			<li>DestroyApparel</li>
+			<li>Make_ComponentIndustrial</li>
+			<li>Make_ComponentSpacer</li>
 			<!--<li>Seg_SmeltNonSmeltable</li>
 			<li>Seg_SmeltNonSmeltableLowTier</li>-->
 		</recipes>
