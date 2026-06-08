@@ -42,8 +42,8 @@
 		<defName>Seg_LasgunDamage</defName>
 		<label>Lasburn</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
-		<armorCategory>Heat</armorCategory>
-		<hediff>Shredded</hediff>
+		<armorCategory>Sharp</armorCategory>
+		<hediff>Burn</hediff>
 		<deathMessage>{0} was turned into swiss cheese.</deathMessage>
 		<impactSoundType>Electric</impactSoundType>
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
