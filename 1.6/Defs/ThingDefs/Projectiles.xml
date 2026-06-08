@@ -3,8 +3,8 @@
 	<!-- Lasgun shot -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_MarsLasgunShot</defName>
-		<label>lasgun shot</label>
-		<description>a sustained beam of laser energy. good for melting armour.</description>
+		<label>las bolt</label>
+		<description>A stabbing bolt of las energy.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
