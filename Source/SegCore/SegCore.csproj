@@ -82,6 +82,7 @@
         <Compile Include="Heddif_RandomDamage.cs" />
         <Compile Include="Projectile_ShieldBreaker.cs" />
         <Compile Include="LaserProjectileSpawnFilthImpactOnly.cs" />
+        <Compile Include="WarrantOfTrade.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
