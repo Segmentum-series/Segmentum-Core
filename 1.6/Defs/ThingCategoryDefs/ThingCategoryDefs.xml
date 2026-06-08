@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>Seg_ImperiumWeapons</defName>
+		<label>Imperium weaponry</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Seg_ImperiumArmour</defName>
+		<label>Imperium armour</label>
+		<parent>ApparelArmor</parent>
+	</ThingCategoryDef>
+</Defs>

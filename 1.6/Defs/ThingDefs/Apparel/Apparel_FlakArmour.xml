@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Abstract="true" Name="Seg_ArmourBase" ParentName="ArmorMachineableBase">
+		<thingClass>Apparel</thingClass>
+		<graphicData>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>Seg_ImperiumArmour</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Seg_FlakArmour</li>
+		</tradeTags>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_FlakArmour</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		 <comps>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+				<defaultPrimaryColor>(146,12,18)</defaultPrimaryColor>
+				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor>
+				<defaultTertiaryColor>(146,12,18)</defaultTertiaryColor>
+			</li>
+		</comps>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>Seg_ImperialCraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+	</ThingDef>
+
+	<!-- Flak Helmet -->
+	<ThingDef ParentName="Seg_ArmourBase">
+		<defName>Seg_Apparel_FlakHelmet</defName>
+		<label>Munitorum flak helmet</label>
+		<description>This flak helmet is a standard pattern manufactured on thousands of worlds in the Imperium and used to outfit all manner of Planetary Defence Forces, Militarum regiments, voidship armsmen, Inquisition warbands, and innumerable paramilitary organisations. It is designed with resource efficiency and ease of manufacture in mind, but even so many a Guardsman owes another few hours of life and service to the humble protection offered here.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Imperial crafting bench&lt;/color&gt;.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/FlakHelmet/Seg_FlakHelmet</texPath>
+		</graphicData>
+		<uiIconPath>Things/Apparel/FlakHelmet/Seg_FlakHelmet</uiIconPath>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>1.4</Mass>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<Insulation_Cold>1.5</Insulation_Cold>
+			<EquipDelay>1.5</EquipDelay>
+			<MarketValue>300</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_FlakArmour</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/FlakHelmet/Seg_FlakHelmet</li>
+			</wornGraphicPaths>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_MunitorumEquipment</li>
+				<li>FlakArmor</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+			</li>
+		</comps>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+	<!-- Flak Armour -->
+	<ThingDef ParentName="Seg_ArmourBase">
+		<defName>Seg_Apparel_FlakArmour</defName>
+		<label>Munitorum flak armour</label>
+		<description>This flak armour is a standard pattern manufactured on thousands of worlds in the Imperium and used to outfit all manner of Planetary Defence Forces, Militarum regiments, voidship armsmen, Inquisition warbands, and innumerable paramilitary organisations. It is designed with resource efficiency and ease of manufacture in mind, but even so many a Guardsman owes another few hours of life and service to the humble protection offered here.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Imperial crafting bench&lt;/color&gt;.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/FlakArmor/Seg_FlakArmor</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Mass>7.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<Insulation_Cold>15.4</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<costList>
+			<Cloth>65</Cloth>
+			<Steel>100</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_FlakArmour</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/FlakArmor/Seg_FlakArmor</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_MunitorumEquipment</li>
+				<li>FlakArmor</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+</Defs>
