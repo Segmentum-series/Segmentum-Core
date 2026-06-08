@@ -1,7 +1,7 @@
 <Defs>
 <DamageDef ParentName="Bullet">
 		<defName>Seg_MeltaDamage</defName>
-		<label>Melta burn</label>
+		<label>melta burn</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<armorCategory>Heat</armorCategory>
 		<hediff>Shredded</hediff>
@@ -11,7 +11,7 @@
 	</DamageDef>
 	<DamageDef Name="Seg_VIND_ShieldBreakerExplosion">
 		<defName>Seg_VIND_ShieldBreakerExplosion</defName>
-		<label>ShieldBreakerExplosion</label>
+		<label>shieldbreaker explosion</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -40,11 +40,11 @@
   <!-- Lasgun damage -->
 	<DamageDef ParentName="Bullet">
 		<defName>Seg_LasgunDamage</defName>
-		<label>Lasburn</label>
+		<label>lasburn</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<armorCategory>Sharp</armorCategory>
 		<hediff>Burn</hediff>
-		<deathMessage>{0} was turned into swiss cheese.</deathMessage>
+		<deathMessage>{0} was blasted with a lasbolt.</deathMessage>
 		<impactSoundType>Electric</impactSoundType>
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
 	</DamageDef>
