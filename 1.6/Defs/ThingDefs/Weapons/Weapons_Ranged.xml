@@ -60,7 +60,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_MarsLasgunShot</defaultProjectile>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Seg_LasgunFire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>1</warmupTime>
 				<range>31.9</range>
