@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Flak helmet -->
+	<!-- Eagle -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_Deco_FlakHelmetSkull</defName>
+		<label>Skull and wings</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FlakHelmet/Seg_Deco_FlakHelmet_Eagle</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FlakHelmet/Seg_FlakHelmet_Eagle</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<appliesTo>
+			<li>Seg_Apparel_FlakHelmet</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(182,182,182)</defaultColour>
+		<availablePresets>
+			<li>Seg_DecoPalette_Adamantium</li>
+			<li>Seg_DecoPalette_Gold</li>
+			<li>Seg_DecoPalette_Lead</li>
+			<li>Seg_DecoPalette_Silver</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
+
+
+<!-- Flak armour -->
+	<!-- Eagle -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_Deco_FlakArmourBreastplateEagle</defName>
+		<label>Breastplate eagle</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FlakArmour/Seg_Deco_FlakArmour_Eagle</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FlakArmour/Seg_FlakArmour_Eagle</drawnTextureIconPath>
+		<sortOrder>1</sortOrder>
+		<drawSize>(0.3,0.3)</drawSize>
+
+		<defaultShowRotation>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_Apparel_FlakArmour</li>
+		</appliesTo>
+
+		<drawData>
+			<dataSouth>
+				<layer>48</layer>
+			</dataSouth>
+		</drawData>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+		</appliesToBodyTypes>
+		
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(182,182,182)</defaultColour>
+		<availablePresets>
+			<li>Seg_DecoPalette_Adamantium</li>
+			<li>Seg_DecoPalette_Gold</li>
+			<li>Seg_DecoPalette_Lead</li>
+			<li>Seg_DecoPalette_Silver</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
+
+</Defs>

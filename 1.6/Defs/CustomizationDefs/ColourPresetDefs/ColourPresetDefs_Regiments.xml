@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Apparel colour base presets -->
+	<!-- Flak armours -->
+	<Core40k.ColourPresetDef Name="Seg_ColorPreset_FlakArmour" Abstract="True">
+		<appliesTo>
+			<li>Seg_Apparel_FlakArmour</li>
+			<li>Seg_Apparel_FlakHelmet</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+<!-- Flak armours palettes -->
+	<!-- Militarium grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_1</defName>
+		<label>Militarium grey</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(110,110,110)</primaryColour>
+		<secondaryColour>(110,110,110)</secondaryColour>
+		<tertiaryColour>(110,110,110)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Cadian green -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_2</defName>
+		<label>Cadian green</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(60,85,60)</primaryColour>
+		<secondaryColour>(60,85,60)</secondaryColour>
+		<tertiaryColour>(60,85,60)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Tallarn brown -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_3</defName>
+		<label>Tallarn brown</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(103,83,69)</primaryColour>
+		<secondaryColour>(103,83,69)</secondaryColour>
+		<tertiaryColour>(103,83,69)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Krieg grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_4</defName>
+		<label>Krieg grey</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(83,83,83)</primaryColour>
+		<secondaryColour>(83,83,83)</secondaryColour>
+		<tertiaryColour>(83,83,83)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Valhallan white -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_5</defName>
+		<label>Valhallan white</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(225,231,236)</primaryColour>
+		<secondaryColour>(225,231,236)</secondaryColour>
+		<tertiaryColour>(225,231,236)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Scions blue -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_6</defName>
+		<label>Scions blue</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(67,82,97)</primaryColour>
+		<secondaryColour>(67,82,97)</secondaryColour>
+		<tertiaryColour>(67,82,97)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+</Defs>
