@@ -14,7 +14,7 @@
 	<!-- Militarium grey -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
 		<defName>Seg_FlakArmour_ColorPreset_1</defName>
-		<label>Militarium grey</label>
+		<label>Militarum grey</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(110,110,110)</primaryColour>
 		<secondaryColour>(110,110,110)</secondaryColour>
@@ -64,7 +64,7 @@
 	<!-- Scions blue -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
 		<defName>Seg_FlakArmour_ColorPreset_6</defName>
-		<label>Scions blue</label>
+		<label>Scion blue</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(67,82,97)</primaryColour>
 		<secondaryColour>(67,82,97)</secondaryColour>
