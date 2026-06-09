@@ -1,0 +1,15 @@
+<Defs> 
+<FleckDef ParentName="FleckBase">
+    <defName>Seg_Lasgun_HitMote</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.05</solidTime>
+    <fadeInTime>0.03</fadeInTime>
+    <fadeOutTime>0.15</fadeOutTime>
+    <growthRate>3</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/BrightFlash</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <color>(255,0,0)</color>
+    </graphicData>
+  </FleckDef>
+</Defs>
