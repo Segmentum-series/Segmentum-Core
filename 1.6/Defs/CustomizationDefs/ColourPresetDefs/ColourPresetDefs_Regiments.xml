@@ -71,4 +71,14 @@
 		<tertiaryColour>(67,82,97)</tertiaryColour>
 	</Core40k.ColourPresetDef>
 
+	<!-- Hyrkan grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_7</defName>
+		<label>Hyrkan grey</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(62,66,72)</primaryColour>
+		<secondaryColour>(62,66,72)</secondaryColour>
+		<tertiaryColour>(62,66,72)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+	
 </Defs>
