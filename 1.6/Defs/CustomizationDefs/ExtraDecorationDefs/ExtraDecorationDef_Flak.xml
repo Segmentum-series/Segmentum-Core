@@ -5,7 +5,7 @@
 	<!-- Eagle -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_Deco_FlakHelmetSkull</defName>
-		<label>Skull and wings</label>
+		<label>Astra Militarum emblem</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/FlakHelmet/Seg_Deco_FlakHelmet_Eagle</iconPath>
 		<drawnTextureIconPath>Things/Decoration/FlakHelmet/Seg_FlakHelmet_Eagle</drawnTextureIconPath>
@@ -52,7 +52,7 @@
 	<!-- Eagle -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_Deco_FlakArmourBreastplateEagle</defName>
-		<label>Breastplate eagle</label>
+		<label>Imperial aquila</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/FlakArmour/Seg_Deco_FlakArmour_Eagle</iconPath>
 		<drawnTextureIconPath>Things/Decoration/FlakArmour/Seg_FlakArmour_Eagle</drawnTextureIconPath>
