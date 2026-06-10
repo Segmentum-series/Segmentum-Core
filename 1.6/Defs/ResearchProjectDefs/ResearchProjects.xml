@@ -14,7 +14,7 @@
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.4</researchViewY>
 		<prerequisites>
-			<li>Gunsmithing</li>
+			<li>Machining</li>
 		</prerequisites>
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
