@@ -10,6 +10,7 @@
 			<drawSize>1.3</drawSize>
 		</graphicData>
         <recipeMaker>
+			<researchPrerequisite Inherit="False"></researchPrerequisite>
 			<researchPrerequisites Inherit="False">
 				<li>Seg_MunitorumEquipment</li>
 				<li>GasOperation</li>
