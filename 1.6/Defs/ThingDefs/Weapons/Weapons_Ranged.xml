@@ -78,6 +78,13 @@
 		</costList>
 		<modExtensions>
 		</modExtensions>
+		<comps>
+				<li Class="Core40k.CompProperties_MultiColor">
+					<colorMaskAmount>2</colorMaskAmount>
+					<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+					<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				</li>
+		</comps>
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
 			<li>Seg_Las</li>
