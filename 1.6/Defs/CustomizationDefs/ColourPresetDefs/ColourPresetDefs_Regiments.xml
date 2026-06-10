@@ -7,6 +7,7 @@
 		<appliesTo>
 			<li>Seg_Apparel_FlakArmour</li>
 			<li>Seg_Apparel_FlakHelmet</li>
+			<li>Seg_Gun_MarsLasgun</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 

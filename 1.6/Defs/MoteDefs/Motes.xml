@@ -2,14 +2,32 @@
 <FleckDef ParentName="FleckBase">
     <defName>Seg_Lasgun_HitMote</defName>
     <altitudeLayer>MoteOverhead</altitudeLayer>
-    <solidTime>0.05</solidTime>
-    <fadeInTime>0.03</fadeInTime>
-    <fadeOutTime>0.15</fadeOutTime>
+    <solidTime>0.1</solidTime>
+    <fadeInTime>0.08</fadeInTime>
+    <fadeOutTime>0.2</fadeOutTime>
     <growthRate>3</growthRate>
     <graphicData>
       <texPath>Things/Mote/BrightFlash</texPath>
       <shaderType>MoteGlow</shaderType>
       <color>(255,0,0)</color>
+      <drawSize>.3</drawSize>
     </graphicData>
   </FleckDef>
+  <EffecterDef>
+    <defName>Seg_Lasgun_HitEffecter</defName>
+    <children>
+      <!-- flash -->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>Seg_Lasgun_HitMote</fleckDef>
+        <burstCount>3</burstCount>
+        <initialDelayTicks>1</initialDelayTicks>
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>15</chancePeriodTicks>
+        <scale>.3</scale>
+        <color>(255,0,0)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
 </Defs>

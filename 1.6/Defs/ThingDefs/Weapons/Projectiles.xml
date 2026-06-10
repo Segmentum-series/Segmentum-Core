@@ -44,8 +44,9 @@
 
 				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
+				<!--<endEffecterDef>Seg_Lasgun_HitEffecter</endEffecterDef>-->
 				<groundFleckDef>Seg_Lasgun_HitMote</groundFleckDef>
-				<fleckChancePerTick>1</fleckChancePerTick>
+				<fleckChancePerTick>0.5</fleckChancePerTick>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
 				<lockOnTarget>false</lockOnTarget>
