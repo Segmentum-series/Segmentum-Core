@@ -12,6 +12,8 @@
         <recipeMaker>
 			<researchPrerequisites Inherit="False">
 				<li>Seg_MunitorumEquipment</li>
+				<li>GasOperation</li>
+				<li>Batteries</li>
 			</researchPrerequisites>
 			<recipeUsers Inherit="False">
 				<li>Seg_ImperialCraftingTable</li>
@@ -38,7 +40,7 @@
 					<li>Poke</li>
 				</capacities>
 				<power>9</power>
-				<cooldownTime>4</cooldownTime>
+				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
         <weaponTags Inherit="False" />
@@ -47,13 +49,13 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.7</EquipDelay>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.65</AccuracyTouch>
-			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.45</AccuracyLong>
 			<WorkToMake>20000</WorkToMake>
-			<MarketValue>800</MarketValue>
+			<MarketValue>650</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -61,17 +63,17 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_MarsLasgunShot</defaultProjectile>
 				<soundCast>Seg_LasgunFire</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<soundCastTail>GunTail_Medium</soundCastTail>
 				<warmupTime>1</warmupTime>
 				<range>31.9</range>
 				<burstShotCount>2</burstShotCount>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
 		<costList>
 			<Steel>70</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
 		<modExtensions>
 		</modExtensions>

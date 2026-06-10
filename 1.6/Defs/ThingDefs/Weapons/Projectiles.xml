@@ -19,9 +19,9 @@
 
 		<projectile>
 			<damageDef>Seg_LasgunDamage</damageDef>
-			<damageAmountBase>18</damageAmountBase>
-			<armorPenetrationBase>.30</armorPenetrationBase>
-			<stoppingPower>2</stoppingPower>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>.20</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
 			<speed>999</speed>
 		</projectile>
 
@@ -45,7 +45,7 @@
 				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 				<groundFleckDef>Seg_Lasgun_HitMote</groundFleckDef>
-				 <fleckChancePerTick>1</fleckChancePerTick>
+				<fleckChancePerTick>1</fleckChancePerTick>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
 				<lockOnTarget>false</lockOnTarget>
