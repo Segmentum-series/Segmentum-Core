@@ -1,5 +1,7 @@
 <Defs>
-<ThingDef ParentName="BaseHumanMakeableGun">
+
+	<!-- Mars lasgun -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Seg_Gun_MarsLasgun</defName>
 		<label>Lasgun (Mars-pattern)</label>
 		<description>Like all lasguns, the Mars-pattern is not the most powerful firearm, but it is reliable, logistically simple, and can stop a charging greenskin at fifty paces with an accurate grouping of lasbolts. This is one of the oldest patterns of lasgun still in use in the Imperium, and is still frequently found in the hands of noble retinues or Inquisition warbands as well as seeing continuing use by forces supplied by the forge world of Mars.</description>
@@ -9,7 +11,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.3</drawSize>
 		</graphicData>
-        <recipeMaker>
+		<!-- <uiIconScale>0.8</uiIconScale> Not working currently for unspecified reasons -->
+
+		<recipeMaker>
 			<researchPrerequisite Inherit="False"></researchPrerequisite>
 			<researchPrerequisites Inherit="False">
 				<li>Seg_MunitorumEquipment</li>
@@ -25,7 +29,7 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-        <tools>
+		<tools>
 			<li>
 				<label>stock</label>
 				<capacities>
@@ -44,7 +48,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-        <weaponTags Inherit="False" />
+		<weaponTags Inherit="False" />
 		<tradeTags Inherit="False" />
 		<uiIconScale>1</uiIconScale>
 		<statBases>
@@ -94,18 +98,18 @@
 					</west>
 				</weaponCarryDrawOffsets>
 			</li>
-			 <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-        <tabDefs>
-          <li>BEWH_WeaponColoring</li>
-          <li>BEWH_WeaponDecoration</li>
-        </tabDefs>
-      </li>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_WeaponColoring</li>
+					<li>BEWH_WeaponDecoration</li>
+				</tabDefs>
+			</li>
 		</modExtensions>
 		<comps>
 				<li Class="Core40k.CompProperties_MultiColor">
 					<colorMaskAmount>2</colorMaskAmount>
-					<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
-					<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+						<defaultPrimaryColor>(124,124,124)</defaultPrimaryColor>
+						<defaultSecondaryColor>(140,85,57)</defaultSecondaryColor>
 				</li>
 				 <li Class="Core40k.CompProperties_WeaponDecoration" />
 		</comps>
@@ -117,4 +121,5 @@
 			<li>Seg_Las</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>
