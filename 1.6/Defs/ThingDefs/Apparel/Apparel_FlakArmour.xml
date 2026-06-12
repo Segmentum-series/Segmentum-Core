@@ -136,12 +136,13 @@
 			<MaxHitPoints>280</MaxHitPoints>
 			<Mass>7.5</Mass>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Sharp>1.10</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<Insulation_Cold>15.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>3</EquipDelay>
+			<MarketValue>450</MarketValue>
 		</statBases>
 		<costList>
 			<Cloth>65</Cloth>
