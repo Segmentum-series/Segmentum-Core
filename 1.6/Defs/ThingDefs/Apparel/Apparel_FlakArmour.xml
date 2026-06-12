@@ -40,8 +40,6 @@
 			<recipeUsers Inherit="False">
 				<li>Seg_ImperialCraftingTable</li>
 				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CraftingTable</li>
-				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CraftingTableChemfuel</li>
-				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CraftingTableHelixien</li>
 			</recipeUsers>
 		</recipeMaker>
 		
@@ -136,7 +134,7 @@
 			<MaxHitPoints>280</MaxHitPoints>
 			<Mass>7.5</Mass>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+			<ArmorRating_Sharp>.80</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<Insulation_Cold>15.4</Insulation_Cold>
