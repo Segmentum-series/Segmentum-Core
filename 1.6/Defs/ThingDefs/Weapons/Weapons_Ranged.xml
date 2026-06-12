@@ -22,6 +22,9 @@
 			</researchPrerequisites>
 			<recipeUsers Inherit="False">
 				<li>Seg_ImperialCraftingTable</li>
+				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CraftingTable</li>
+				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CraftingTableChemfuel</li>
+				<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CraftingTableHelixien</li>
 			</recipeUsers>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
