@@ -82,7 +82,6 @@
         <Compile Include="Heddif_RandomDamage.cs" />
         <Compile Include="Projectile_ShieldBreaker.cs" />
         <Compile Include="LaserProjectileSpawnFilthImpactOnly.cs" />
-        <Compile Include="WarrantOfTrade.cs" />
         <Compile Include="LaserProjectileImpact.cs" />
         <!--<Compile Include="GameComponent_WarrantTimer.cs" />-->
     </ItemGroup>
