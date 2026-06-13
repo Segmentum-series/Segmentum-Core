@@ -17,4 +17,9 @@
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 
+	 <ThingCategoryDef>
+      <defName>Seg_ImperiumArtifactBuildings</defName>
+      <label>Imperial artifacts</label>
+      <parent>BuildingsSpecial</parent>
+    </ThingCategoryDef>
 </Defs>
