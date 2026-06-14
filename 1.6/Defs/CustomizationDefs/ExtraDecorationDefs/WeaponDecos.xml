@@ -1,9 +1,9 @@
 <!--Mars Lasgun-->
 <Defs>
-	<Core40k.WeaponDecorationTypeDef>
+	<Core40k.DecorationTypeDef>
 		<defName>Seg_WeaponDecals</defName>
 		<label>Decals</label>
-	</Core40k.WeaponDecorationTypeDef>
+	</Core40k.DecorationTypeDef>
 <Core40k.WeaponDecorationDef>
     <defName>Seg_WeaponDecal_Aquila</defName>
     <label>Aquila</label>
