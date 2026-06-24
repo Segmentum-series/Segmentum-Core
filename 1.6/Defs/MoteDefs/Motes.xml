@@ -30,4 +30,28 @@
       </li>
     </children>
   </EffecterDef>
+  
+
+<FleckDef ParentName="FleckBase_Thrown">
+    <defName>SEG_COTO_Plasmafleksplatter</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.05</fadeInTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <solidTime>0.8</solidTime>
+    <growthRate>0</growthRate>
+    <graphicData>
+	<texPath>Things/Projectile/Seg_COTO_Plasma_trail</texPath>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <color>(1, 1, 1, 0.70)</color>
+      <shaderType>TransparentPostLight</shaderType>
+      <shaderParameters>
+        <_MultiplyTex>1</_MultiplyTex>
+        <_texBScale>0.2</_texBScale>
+        <_texBScrollSpeed>-0.5</_texBScrollSpeed>
+        <_Intensity>13</_Intensity>
+        <_Clip>0</_Clip>
+      </shaderParameters>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+  </FleckDef>
 </Defs>
