@@ -31,7 +31,6 @@
     </children>
   </EffecterDef>
   
-
 <FleckDef ParentName="FleckBase_Thrown">
     <defName>SEG_COTO_Plasmafleksplatter</defName>
     <altitudeLayer>MoteOverhead</altitudeLayer>
@@ -53,5 +52,16 @@
       </shaderParameters>
       <drawSize>(2, 2)</drawSize>
     </graphicData>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase">
+    <defName>Seg_BlastEMPLong</defName>
+    <graphicData>
+      <texPath>Things/Mote/BlastEMP</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>.5</solidTime>
+    <fadeOutTime>0.2</fadeOutTime>
   </FleckDef>
 </Defs>

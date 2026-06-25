@@ -4,6 +4,8 @@ using Verse;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System;
+using System.Reflection;
 using taranchuk_lasers;
 
 namespace seg
@@ -25,8 +27,6 @@ namespace seg
             Pawn caster = launcher as Pawn;
             if (caster == null)
                 return;
-
-            // LaserProjectile does NOT initialize comps, so we must do it manually
             if (__instance.AllComps == null)
                 __instance.InitializeComps();
 
@@ -37,7 +37,47 @@ namespace seg
             comp.TryOverheat(caster);
         }
     }
+    [HarmonyPatch(
+    typeof(Projectile),
+    nameof(Projectile.Launch),
+    new Type[] {
+        typeof(Thing),
+        typeof(Vector3),
+        typeof(LocalTargetInfo),
+        typeof(LocalTargetInfo),
+        typeof(ProjectileHitFlags),
+        typeof(bool),
+        typeof(Thing),
+        typeof(ThingDef)
+    }
+)]
+public static class OverheatPatch_AllProjectiles
+{
+    static void Postfix(
+        Projectile __instance,
+        Thing launcher,
+        Vector3 origin,
+        LocalTargetInfo usedTarget,
+        LocalTargetInfo intendedTarget,
+        ProjectileHitFlags hitFlags,
+        bool preventFriendlyFire,
+        Thing equipment,
+        ThingDef targetCoverDef)
+    {
+        Pawn caster = launcher as Pawn;
+        if (caster == null)
+            return;
 
+        if (__instance.AllComps == null)
+            __instance.InitializeComps();
+
+        var comp = __instance.GetComp<CompProjectileOverheat>();
+        if (comp == null)
+            return;
+
+        comp.TryOverheat(caster);
+    }
+}
     public class CompProperties_ProjectileOverheat : CompProperties
     {
         public float overheatChance = 0.05f;
@@ -45,43 +85,56 @@ namespace seg
         public string damageDef = "Flame";
         public int damageAmount = 10;
 
+        public string fleckDefName = null;
+
         public CompProperties_ProjectileOverheat()
         {
             this.compClass = typeof(CompProjectileOverheat);
         }
     }
-
     public class CompProjectileOverheat : ThingComp
 {
     public CompProperties_ProjectileOverheat Props =>
         (CompProperties_ProjectileOverheat)this.props;
 
-    public void TryOverheat(Pawn caster)
-{
-    if (Rand.Value > Props.overheatChance)
-        return;
+    private List<int> recentFireTicks = new List<int>();
 
-    
-    GenExplosion.DoExplosion(
-        caster.Position,
-        caster.Map,
-        Props.blastRadius,
-        DefDatabase<DamageDef>.GetNamed(Props.damageDef),
-        caster,
-        Props.damageAmount
-    );
-
-    // Custom fleck (your plasma splatter)
-    FleckDef fleck = DefDatabase<FleckDef>.GetNamed("SEG_COTO_Plasmafleksplatter", false);
-    if (fleck != null)
+    public void RegisterFire()
     {
-        FleckMaker.Static(
+        int now = Find.TickManager.TicksGame;
+        recentFireTicks.Add(now);
+        recentFireTicks.RemoveAll(t => now - t > 600);
+    }
+
+    public void TryOverheat(Pawn caster)
+    {
+        RegisterFire();
+
+        int timesFiredRecently = recentFireTicks.Count;
+        float finalChance = Props.overheatChance * timesFiredRecently;
+        if (Rand.Value > finalChance)
+            return;
+        GenExplosion.DoExplosion(
             caster.Position,
             caster.Map,
-            fleck,
-            1.5f
+            Props.blastRadius,
+            DefDatabase<DamageDef>.GetNamed(Props.damageDef),
+            caster,
+            Props.damageAmount
         );
+        if (!Props.fleckDefName.NullOrEmpty())
+        {
+            FleckDef fleck = DefDatabase<FleckDef>.GetNamed(Props.fleckDefName, false);
+            if (fleck != null)
+            {
+                FleckMaker.Static(
+                    caster.Position,
+                    caster.Map,
+                    fleck,
+                    1.5f
+                );
+            }
+        }
     }
-}
 }
 }
