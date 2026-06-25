@@ -84,6 +84,7 @@
         <Compile Include="LaserProjectileSpawnFilthImpactOnly.cs" />
         <Compile Include="LaserProjectileImpact.cs" />
         <Compile Include="ProjectileOverheatComp.cs" />
+        <Compile Include="ApparelAcidify.cs" />
         <!--<Compile Include="GameComponent_WarrantTimer.cs" />-->
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
