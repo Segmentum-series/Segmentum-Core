@@ -87,6 +87,10 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/FlakHelmet/Seg_FlakHelmet</li>
 			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+					<li>Beard</li>
+			</renderSkipFlags>
 		</apparel>
 
 		<recipeMaker>
