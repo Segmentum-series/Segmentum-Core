@@ -2,6 +2,7 @@
 <Defs>
 
 <!-- Full palettes (3 channels) -->
+	<!-- Nothing -->
 
 <!-- Decorations  -->
 	<!-- Adamantium -->
@@ -31,4 +32,5 @@
 		<label>Lead</label>
 		<colour>(103,103,103)</colour>
 	</Core40k.DecorationColourPresetDef>
+
 </Defs>
