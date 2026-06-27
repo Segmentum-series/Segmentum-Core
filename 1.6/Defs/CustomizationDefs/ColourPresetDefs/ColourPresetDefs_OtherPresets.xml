@@ -39,7 +39,7 @@
 	<!-- Patch leather -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
 		<defName>Seg_GenericVanillaLeathery_ColorPreset_1</defName>
-		<label>Patch leather</label>
+		<label>Patchleather</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(90,75,60)</primaryColour>
 		<secondaryColour>(90,75,60)</secondaryColour>
@@ -49,7 +49,7 @@
 	<!-- Lizard leather -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
 		<defName>Seg_GenericVanillaLeathery_ColorPreset_2</defName>
-		<label>Lizard leather</label>
+		<label>Lizardskin</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(101,116,58)</primaryColour>
 		<secondaryColour>(101,116,58)</secondaryColour>
@@ -79,7 +79,7 @@
 	<!-- Rhino leather -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
 		<defName>Seg_GenericVanillaLeathery_ColorPreset_5</defName>
-		<label>Rhino leather</label>
+		<label>Rhinoceros leather</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(150,150,150)</primaryColour>
 		<secondaryColour>(150,150,150)</secondaryColour>
@@ -91,7 +91,7 @@
 	<!-- Fox leather -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
 		<defName>Seg_GenericVanillaFurry_ColorPreset_1</defName>
-		<label>Fox leather</label>
+		<label>Foxfur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(178,100,34)</primaryColour>
 		<secondaryColour>(178,100,34)</secondaryColour>
@@ -101,7 +101,7 @@
 	<!-- Heavy leather -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
 		<defName>Seg_GenericVanillaFurry_ColorPreset_2</defName>
-		<label>Heavy leather</label>
+		<label>Heavy fur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(189,161,116)</primaryColour>
 		<secondaryColour>(189,161,116)</secondaryColour>
@@ -121,7 +121,7 @@
 	<!-- Chincilla fur -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
 		<defName>Seg_GenericVanillaFurry_ColorPreset_4</defName>
-		<label>Chincilla fur</label>
+		<label>Chinchilla fur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(178,170,158)</primaryColour>
 		<secondaryColour>(178,170,158)</secondaryColour>
