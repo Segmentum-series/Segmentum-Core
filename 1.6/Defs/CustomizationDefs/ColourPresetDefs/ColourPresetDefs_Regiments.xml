@@ -144,5 +144,14 @@
 		<secondaryColour>(126,77,61)</secondaryColour>
 	</Core40k.ColourPresetDef>
 
+	<!-- Gudrunite red -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_MarsLasgun_ColorPreset_6</defName>
+		<label>Gudrunite red</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(180,60,60)</primaryColour>
+		<secondaryColour>(180,60,60)</secondaryColour>
+		<tertiaryColour>(180,60,60)</tertiaryColour>
+	</Core40k.ColourPresetDef>
 
 </Defs>
