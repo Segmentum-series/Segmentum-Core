@@ -88,6 +88,15 @@
 		<tertiaryColour>(62,66,72)</tertiaryColour>
 	</Core40k.ColourPresetDef>
 
+	<!-- Gudrunite red -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_8</defName>
+		<label>Gudrunite red</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(180,60,60)</primaryColour>
+		<secondaryColour>(180,60,60)</secondaryColour>
+		<tertiaryColour>(180,60,60)</tertiaryColour>
+	</Core40k.ColourPresetDef>
 
 <!-- Mars lasgun palettes -->
 	<!-- Cadian green -->
