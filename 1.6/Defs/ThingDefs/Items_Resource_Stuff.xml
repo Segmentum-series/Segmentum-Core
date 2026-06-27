@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
 <!-- Adamantium -->
 	<ThingDef ParentName="ResourceBase">
 		<defName>Seg_Adamantium</defName>
@@ -110,4 +111,5 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
+
 </Defs>

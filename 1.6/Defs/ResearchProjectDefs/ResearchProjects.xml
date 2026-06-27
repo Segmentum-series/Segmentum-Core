@@ -3,9 +3,42 @@
 <!-- Main research tree -->
 
 <!-- Segmentum research tree -->
-	
-<!-- Munitorum Equipment -->
-<ResearchProjectDef>
+	<!-- Ceramite production -->
+	<ResearchProjectDef>
+		<defName>Seg_CeramiteProduction</defName>
+		<label>ceramite production</label>
+		<description>Produce advanced ceramic composites from stone blocks and other materials.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>4.20</researchViewY>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>Stonecutting</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- Plasma induction -->
+	<ResearchProjectDef>
+		<defName>Seg_PlasmaInduction</defName>
+		<label>plasma induction</label>
+		<description>Be granted the consecrated rites of plasma induction, allowing the containment and manipulation of extreme thermal energies for use in weapon systems, power generation, and advanced industrial applications.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+			<researchViewX>19.00</researchViewX>
+			<researchViewY>1.80</researchViewY>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+			<li>Batteries</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+	<!-- Munitorum Equipment -->
+	<ResearchProjectDef>
 		<defName>Seg_MunitorumEquipment</defName>
 		<label>Munitorum equipment</label>
 		<description>Prepare for local production of basic Imperial military equipment according to patterns approved by the Departmento Munitorum, such as the ubiquitous lasgun.</description>
@@ -18,5 +51,5 @@
 		</prerequisites>
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
-	
+
 </Defs>
