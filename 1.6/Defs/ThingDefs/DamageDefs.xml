@@ -47,5 +47,6 @@
 		<deathMessage>{0} was blasted with a lasbolt.</deathMessage>
 		<impactSoundType>Electric</impactSoundType>
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
+		<combatLogRules>Damage_Flame</combatLogRules>
 	</DamageDef>
     </Defs>
