@@ -150,8 +150,8 @@
 		<label>Gudrunite red</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(180,60,60)</primaryColour>
-		<secondaryColour>(180,60,60)</secondaryColour>
-		<tertiaryColour>(180,60,60)</tertiaryColour>
+		<secondaryColour>(61,61,61)</secondaryColour>
+		<tertiaryColour>(61,61,61)</tertiaryColour>
 	</Core40k.ColourPresetDef>
 
 </Defs>
