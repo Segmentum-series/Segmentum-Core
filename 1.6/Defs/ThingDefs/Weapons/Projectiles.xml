@@ -1,0 +1,105 @@
+<Defs> 
+
+	<!-- Lasgun shot -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_MarsLasgunShot</defName>
+		<label>las bolt</label>
+		<description>A stabbing bolt of las energy.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_Core_Lasbolt</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_LasgunDamage</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>.20</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>15</damageTickRate>
+				<lifetimeTicks>15</lifetimeTicks>
+				<chainRange>0</chainRange>
+				<maxChainTargets>0</maxChainTargets>
+				<chainDelayTicks>100000</chainDelayTicks>
+				<chainToAnything>false</chainToAnything>
+				<maxBranches>0</maxBranches>
+				<branchChance>0</branchChance>
+
+				<beamWidth>0.5</beamWidth>
+				<beamWidthDrawScale>1</beamWidthDrawScale>
+
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+				<!--<endEffecterDef>Seg_Lasgun_HitEffecter</endEffecterDef>-->
+				<groundFleckDef>Seg_Lasgun_HitMote</groundFleckDef>
+				<fleckChancePerTick>0.5</fleckChancePerTick>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>false</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+     <ThingDef ParentName="BaseBullet">
+  		<defName>Seg_MeltaBeam</defName>
+  		<label>melta beam</label>
+  		<description>a sustained beam of heat. good for melting armour.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_MeltaBeam2</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_MeltaDamage</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>20</lifetimeTicks>
+				<chainRange>0</chainRange>
+				<maxChainTargets>0</maxChainTargets>
+				<chainDelayTicks>100000</chainDelayTicks>
+				<chainToAnything>false</chainToAnything>
+				<maxBranches>0</maxBranches>
+				<branchChance>0</branchChance>
+
+				<beamWidth>2</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0.1</sweepRatePerTick>
+				<maxSweepAngle>1</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

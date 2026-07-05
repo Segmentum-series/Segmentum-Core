@@ -81,6 +81,12 @@
         <Compile Include="LaserProjectileSpawnFilth.cs" />
         <Compile Include="Heddif_RandomDamage.cs" />
         <Compile Include="Projectile_ShieldBreaker.cs" />
+        <Compile Include="LaserProjectileSpawnFilthImpactOnly.cs" />
+        <Compile Include="LaserProjectileImpact.cs" />
+        <Compile Include="ProjectileOverheatComp.cs" />
+        <Compile Include="ApparelAcidify.cs" />
+        <Compile Include="RanksParts.cs" />
+        <!--<Compile Include="GameComponent_WarrantTimer.cs" />-->
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

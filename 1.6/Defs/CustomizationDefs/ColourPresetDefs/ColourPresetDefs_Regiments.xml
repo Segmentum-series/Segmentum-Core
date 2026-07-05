@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Apparel colour base presets -->
+	<!-- Flak armours -->
+	<Core40k.ColourPresetDef Name="Seg_ColorPreset_FlakArmour" Abstract="True">
+		<appliesTo>
+			<li>Seg_Apparel_FlakArmour</li>
+			<li>Seg_Apparel_FlakHelmet</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+<!-- Weapon colour base presets -->
+	<Core40k.ColourPresetDef Name="Seg_ColorPreset_MarsLasgun" Abstract="True">
+		<appliesTo>
+			<li>Seg_Gun_MarsLasgun</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+<!-- Flak armours palettes -->
+	<!-- Militarium grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_1</defName>
+		<label>Militarum grey</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(110,110,110)</primaryColour>
+		<secondaryColour>(110,110,110)</secondaryColour>
+		<tertiaryColour>(110,110,110)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Cadian green -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_2</defName>
+		<label>Cadian green</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(60,85,60)</primaryColour>
+		<secondaryColour>(60,85,60)</secondaryColour>
+		<tertiaryColour>(60,85,60)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Tallarn brown -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_3</defName>
+		<label>Tallarn brown</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(103,83,69)</primaryColour>
+		<secondaryColour>(103,83,69)</secondaryColour>
+		<tertiaryColour>(103,83,69)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Krieg grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_4</defName>
+		<label>Krieg grey</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(83,83,83)</primaryColour>
+		<secondaryColour>(83,83,83)</secondaryColour>
+		<tertiaryColour>(83,83,83)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Valhallan white -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_5</defName>
+		<label>Valhallan white</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(225,231,236)</primaryColour>
+		<secondaryColour>(225,231,236)</secondaryColour>
+		<tertiaryColour>(225,231,236)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Scions blue -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_6</defName>
+		<label>Scion blue</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(67,82,97)</primaryColour>
+		<secondaryColour>(67,82,97)</secondaryColour>
+		<tertiaryColour>(67,82,97)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Hyrkan grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_7</defName>
+		<label>Hyrkan grey</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(62,66,72)</primaryColour>
+		<secondaryColour>(62,66,72)</secondaryColour>
+		<tertiaryColour>(62,66,72)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Gudrunite red -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_FlakArmour">
+		<defName>Seg_FlakArmour_ColorPreset_8</defName>
+		<label>Gudrunite red</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(180,60,60)</primaryColour>
+		<secondaryColour>(180,60,60)</secondaryColour>
+		<tertiaryColour>(180,60,60)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+<!-- Mars lasgun palettes -->
+	<!-- Cadian green -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_MarsLasgun">
+		<defName>Seg_MarsLasgun_ColorPreset_1</defName>
+		<label>Cadian green</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(60,85,60)</primaryColour>
+		<secondaryColour>(79,79,79)</secondaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Krieg grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_MarsLasgun">
+		<defName>Seg_MarsLasgun_ColorPreset_2</defName>
+		<label>Krieg grey</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(61,61,61)</primaryColour>
+		<secondaryColour>(137,81,61)</secondaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Trader gold -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_MarsLasgun">
+		<defName>Seg_MarsLasgun_ColorPreset_3</defName>
+		<label>Trader gold</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(230,174,80)</primaryColour>
+		<secondaryColour>(61,61,61)</secondaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Scions grey -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_MarsLasgun">
+		<defName>Seg_MarsLasgun_ColorPreset_4</defName>
+		<label>Scion grey</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(46,46,46)</primaryColour>
+		<secondaryColour>(90,90,90)</secondaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Tech-guard adamantium -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_MarsLasgun">
+		<defName>Seg_MarsLasgun_ColorPreset_5</defName>
+		<label>Tech-guard adamantium</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(219,135,75)</primaryColour>
+		<secondaryColour>(126,77,61)</secondaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Gudrunite red -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_MarsLasgun">
+		<defName>Seg_MarsLasgun_ColorPreset_6</defName>
+		<label>Gudrunite red</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(180,60,60)</primaryColour>
+		<secondaryColour>(180,60,60)</secondaryColour>
+		<tertiaryColour>(180,60,60)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+</Defs>

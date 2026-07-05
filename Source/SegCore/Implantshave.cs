@@ -66,7 +66,7 @@ public static class Patch_DecorativeAddons_GetDynamicNodes
                 continue;
             }
 
-            if (decorativeComp.Decorations == null)
+            if (decorativeComp == null)
             {
                 __result = Enumerable.Empty<(PawnRenderNode, PawnRenderNode)>();
                 return false;

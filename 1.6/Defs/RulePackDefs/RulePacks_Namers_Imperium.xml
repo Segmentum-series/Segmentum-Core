@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Imperium Namers-->
+
+  <RulePackDef>
+    <defName>SegImperiumNameUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>SegImperiumFirst_Male->SegmentumNames/Names/ImperiumFirst_Male</li>
+	    <li>SegImperiumFirst_Female->SegmentumNames/Names/ImperiumFirst_Female</li>
+        <li>SegImperiumLast->SegmentumNames/Names/ImperiumLast</li>
+      </rulesFiles>
+	  <rulesStrings>
+        <li>SegImperiumFirstMale->[SegImperiumFirst_Male]</li>
+        <li>SegImperiumFirstFemale->[SegImperiumFirst_Female]</li>
+        <li>SegImperiumLast->[SegImperiumLast]</li>
+      </rulesStrings>
+	  </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SegNamerPersonImperiumMale</defName>
+	<include>
+		<li>SegImperiumNameUtility</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[SegImperiumFirstMale] [SegImperiumLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SegNamerPersonImperiumFemale</defName>
+	<include>
+		<li>SegImperiumNameUtility</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[SegImperiumFirstFemale] [SegImperiumLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>SegNamerSettlementImperium</defName>
+    <rulePack>
+      <rulesStrings>
+		<li>r_name(p=4)->[segimperiumtownplace] [segimperiumtowntype]</li>
+		<li>r_name(p=4)->[segimperiumtownplace] [segimperiumtowntype]</li>
+		<li>r_name(p=2)->[segimperiumtownperson] [segimperiumtowntype]</li>
+		<li>r_name(p=4)->[segimperiumtownplace] [segimperiumtowntype]</li>
+		<li>r_name(p=2)->[segimperiumtownperson] [segimperiumtowntype]</li>
+		<li>r_name(p=2)->[segimperiumtowndynasty] [segimperiumtowntype]</li>
+		<li>r_name(p=2)->Saint [segimperiumtownsaint]'s [segimperiumtownsaintnoun]</li>
+		<li>r_name(p=1)->[segimperiumtowndynasty] Outpost [segimperiumtowncode]-[segimperiumtowncode]</li>
+      </rulesStrings>
+      <rulesFiles>
+		<li>segimperiumtownplace->SegmentumNames/Names/ImperiumSettlementPlace</li>
+		<li>segimperiumtownperson->SegmentumNames/Names/ImperiumSettlementName</li>
+		<li>segimperiumtownsaint->SegmentumNames/Names/ImperiumSettlementSaint</li>
+		<li>segimperiumtownsaintnoun->SegmentumNames/Names/ImperiumSettlementSaintNoun</li>		
+		<li>segimperiumtowncode->SegmentumNames/Names/ImperiumSettlementCode</li>
+		<li>segimperiumtowntype->SegmentumNames/Names/ImperiumSettlementType</li>
+		<li>segimperiumtowndynasty->SegmentumNames/Names/ImperiumFactionRTDynasty</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SegNamerFactionRogueTrader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->House [RTDynasty] [RTType]</li>
+        <li>r_name->[RTDynasty] Dynasty [RTType]</li>
+      </rulesStrings>
+      <rulesFiles>
+		<li>RTDynasty->SegmentumNames/Names/ImperiumFactionRTDynasty</li>
+		<li>RTType->SegmentumNames/Names/ImperiumFactionRTType</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+ 
+</Defs>

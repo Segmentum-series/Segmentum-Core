@@ -1,7 +1,7 @@
 <Defs>
 <DamageDef ParentName="Bullet">
 		<defName>Seg_MeltaDamage</defName>
-		<label>Melta burn</label>
+		<label>melta burn</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<armorCategory>Heat</armorCategory>
 		<hediff>Shredded</hediff>
@@ -9,58 +9,9 @@
 		<impactSoundType>Electric</impactSoundType>
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
 	</DamageDef>
-<ThingDef ParentName="BaseBullet">
-  		<defName>Seg_MeltaBeam</defName>
-  		<label>melta beam</label>
-  		<description>a sustained beam of heat. good for melting armour.</description>
-		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-		<category>Projectile</category>
-		<drawOffscreen>true</drawOffscreen>
-		<seeThroughFog>true</seeThroughFog>
-
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Projectile/Seg_COTO_MeltaBeam2</texPath>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
-		</graphicData>
-
-		<projectile>
-			<damageDef>Seg_MeltaDamage</damageDef>
-			<damageAmountBase>25</damageAmountBase>
-			<armorPenetrationBase>2.00</armorPenetrationBase>
-			<stoppingPower>2</stoppingPower>
-			<speed>999</speed>
-		</projectile>
-
-		<modExtensions>
-			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>10</damageTickRate>
-				<lifetimeTicks>20</lifetimeTicks>
-				<chainRange>0</chainRange>
-				<maxChainTargets>0</maxChainTargets>
-				<chainDelayTicks>100000</chainDelayTicks>
-				<chainToAnything>false</chainToAnything>
-				<maxBranches>0</maxBranches>
-				<branchChance>0</branchChance>
-
-				<beamWidth>2</beamWidth>
-				<beamWidthDrawScale>2.5</beamWidthDrawScale>
-
-				<sweepRatePerTick>0.1</sweepRatePerTick>
-				<maxSweepAngle>1</maxSweepAngle>
-
-				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
-				<debugCells>false</debugCells>
-
-				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
-			</li>
-		</modExtensions>
-	</ThingDef>
 	<DamageDef Name="Seg_VIND_ShieldBreakerExplosion">
 		<defName>Seg_VIND_ShieldBreakerExplosion</defName>
-		<label>ShieldBreakerExplosion</label>
+		<label>shieldbreaker explosion</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -86,4 +37,16 @@
 		<soundExplosion>Explosion_Bomb</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>
+  <!-- Lasgun damage -->
+	<DamageDef ParentName="Bullet">
+		<defName>Seg_LasgunDamage</defName>
+		<label>lasburn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<armorCategory>Sharp</armorCategory>
+		<hediff>Burn</hediff>
+		<deathMessage>{0} was blasted with a lasbolt.</deathMessage>
+		<impactSoundType>Electric</impactSoundType>
+		<defaultArmorPenetration>2.0</defaultArmorPenetration>
+		<combatLogRules>Damage_Flame</combatLogRules>
+	</DamageDef>
     </Defs>

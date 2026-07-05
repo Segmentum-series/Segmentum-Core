@@ -1,0 +1,47 @@
+<!--Mars Lasgun-->
+<Defs>
+	<Core40k.DecorationTypeDef>
+		<defName>Seg_WeaponDecals</defName>
+		<label>Decals</label>
+	</Core40k.DecorationTypeDef>
+<Core40k.WeaponDecorationDef>
+    <defName>Seg_WeaponDecal_Aquila</defName>
+    <label>Aquila</label>
+    <description>...</description>
+  	 <iconPath>Things/Decoration/FlakHelmet/Seg_FlakHelmet_Eagle_south</iconPath>
+	<drawnTextureIconPath>Things/Decoration/FlakHelmet/Seg_FlakHelmet_Eagle_south</drawnTextureIconPath>
+    <drawSize>(.3, .3)</drawSize>
+    <sortOrder>20</sortOrder>
+    <appliesTo>
+      <li>Seg_Gun_MarsLasgun</li>
+    </appliesTo>
+      <shaderType>Cutout</shaderType>
+    <decorationType>Seg_WeaponDecals</decorationType>
+    <weaponSpecificDrawData>
+	<li>
+        <key>Seg_Gun_MarsLasgun</key>
+        <value>
+          
+          <defaultData>
+            <offset>(-0.108823, 0, 0.064719)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.108823, 0, 0.064719)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.108823, 0, 0.064719)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0.108823, 0, 0.064719)</offset>
+          </dataNorth>
+        </value>
+        </li>
+    </weaponSpecificDrawData>
+    <availablePresets>
+			<li>Seg_DecoPalette_Adamantium</li>
+			<li>Seg_DecoPalette_Gold</li>
+			<li>Seg_DecoPalette_Lead</li>
+			<li>Seg_DecoPalette_Silver</li>
+	</availablePresets>
+  </Core40k.WeaponDecorationDef>
+</Defs>
