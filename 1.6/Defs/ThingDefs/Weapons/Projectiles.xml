@@ -25,6 +25,12 @@
 			<speed>999</speed>
 		</projectile>
 
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Seg_Lasgun_LaserEffecter</effecterDef>
+			</li>
+		</comps>
+
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
 				<damageTickRate>15</damageTickRate>
@@ -53,6 +59,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+
+	<!-- Melta shot -->
      <ThingDef ParentName="BaseBullet">
   		<defName>Seg_MeltaBeam</defName>
   		<label>melta beam</label>

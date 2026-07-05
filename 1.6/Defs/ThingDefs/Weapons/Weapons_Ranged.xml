@@ -52,6 +52,7 @@
 		<weaponTags Inherit="False" />
 		<tradeTags Inherit="False" />
 		<uiIconScale>1</uiIconScale>
+		
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.7</EquipDelay>
@@ -63,6 +64,7 @@
 			<WorkToMake>20000</WorkToMake>
 			<MarketValue>650</MarketValue>
 		</statBases>
+		
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -77,21 +79,19 @@
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
+		
 		<costList>
 			<Steel>70</Steel>
 			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
+		
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension">
 				<weaponCarryDrawOffsets>
-					<north>
-						<angleOffset>-20</angleOffset>
-					</north>
 					<east>
 						<drawOffset>(0, 0, -0.1)</drawOffset>
 					</east>
 					<south>
-						<angleOffset>-20</angleOffset>
 						<drawOffset>(0, 0, -0.1)</drawOffset>
 					</south>
 					<west>
@@ -106,14 +106,16 @@
 				</tabDefs>
 			</li>
 		</modExtensions>
+		
 		<comps>
 				<li Class="Core40k.CompProperties_MultiColor">
 					<colorMaskAmount>2</colorMaskAmount>
 						<defaultPrimaryColor>(124,124,124)</defaultPrimaryColor>
 						<defaultSecondaryColor>(140,85,57)</defaultSecondaryColor>
 				</li>
-				 <li Class="Core40k.CompProperties_WeaponDecoration" />
+				<li Class="Core40k.CompProperties_WeaponDecoration" />
 		</comps>
+
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
 			<li>Seg_Las</li>
