@@ -1,5 +1,7 @@
 <Defs>
-<DamageDef ParentName="Bullet">
+
+<!-- Melta burn -->
+	<DamageDef ParentName="Bullet">
 		<defName>Seg_MeltaDamage</defName>
 		<label>melta burn</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
@@ -9,6 +11,8 @@
 		<impactSoundType>Electric</impactSoundType>
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
 	</DamageDef>
+
+<!-- Shieldbreaker explosion -->
 	<DamageDef Name="Seg_VIND_ShieldBreakerExplosion">
 		<defName>Seg_VIND_ShieldBreakerExplosion</defName>
 		<label>shieldbreaker explosion</label>
@@ -36,12 +40,14 @@
 		<explosionColorEdge>(0.1, 0.25, 0.6)</explosionColorEdge>
 		<soundExplosion>Explosion_Bomb</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
-  </DamageDef>
-  <!-- Lasgun damage -->
+	</DamageDef>
+
+<!-- Lasgun damage -->
 	<DamageDef ParentName="Bullet">
 		<defName>Seg_LasgunDamage</defName>
 		<label>lasburn</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
+		<damageEffecter>Seg_Lasgun_LaserEffecter</damageEffecter>
 		<armorCategory>Sharp</armorCategory>
 		<hediff>Burn</hediff>
 		<deathMessage>{0} was blasted with a lasbolt.</deathMessage>
