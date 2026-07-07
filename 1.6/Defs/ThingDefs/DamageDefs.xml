@@ -47,7 +47,7 @@
 		<defName>Seg_LasgunDamage</defName>
 		<label>lasburn</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
-		<damageEffecter>Seg_Lasgun_LaserEffecter</damageEffecter>
+		<!-- <damageEffecter>Seg_Lasgun_LaserEffecter</damageEffecter> -->
 		<armorCategory>Sharp</armorCategory>
 		<hediff>Burn</hediff>
 		<deathMessage>{0} was blasted with a lasbolt.</deathMessage>
