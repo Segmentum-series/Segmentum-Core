@@ -49,8 +49,6 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<weaponTags Inherit="False" />
-		<tradeTags Inherit="False" />
 		<uiIconScale>1</uiIconScale>
 		<statBases>
 			<Mass>4</Mass>
@@ -58,8 +56,8 @@
 			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.65</AccuracyMedium>
-			<AccuracyLong>0.45</AccuracyLong>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
 			<WorkToMake>20000</WorkToMake>
 			<MarketValue>650</MarketValue>
 		</statBases>
@@ -70,7 +68,7 @@
 				<defaultProjectile>Seg_MarsLasgunShot</defaultProjectile>
 				<soundCast>Seg_LasgunFire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<warmupTime>1</warmupTime>
+				<warmupTime>1.5</warmupTime>
 				<range>31.9</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -115,10 +113,10 @@
 				 <li Class="Core40k.CompProperties_WeaponDecoration" />
 		</comps>
 		<!-- Tags for trading and categorization for later-->
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>Seg_Las</li>
 		</weaponTags>
-		<tradeTags>
+		<tradeTags Inherit="False">
 			<li>Seg_Las</li>
 		</tradeTags>
 	</ThingDef>
