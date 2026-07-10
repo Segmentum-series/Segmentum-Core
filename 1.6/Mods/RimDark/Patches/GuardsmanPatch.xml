@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>Seg_Las</li>
+			</weaponTags>
+		</value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired Inherit="False">
+				<li>Seg_Apparel_FlakHelmet</li>
+				<li>Seg_Apparel_FlakArmour</li>
+				<li>Apparel_BasicShirt</li>
+				<li>Apparel_Pants</li>
+			</apparelRequired>
+		</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="Core40k.DefModExtension_PawnKindCustomization">
+				<defaultColorSelection>
+					<li>
+						<key>Seg_FlakArmour_ColorPreset_2</key>
+						<value>TryMatch</value>
+					</li>
+					<li>
+						<key>Seg_MarsLasgun_ColorPreset_1</key>
+						<value>TryMatch</value>
+					</li>
+				</defaultColorSelection>
+				<extraDecorations>
+					<li>
+						<key>Seg_Apparel_FlakHelmet</key>
+						<value>
+							<li>Seg_Deco_FlakHelmetSkull</li>
+						</value>
+					</li>
+					<li>
+						<key>Seg_Apparel_FlakArmour</key>
+						<value>
+							<li>Seg_Deco_FlakArmourBreastplateEagle</li>
+						</value>
+					</li>
+				</extraDecorations>
+				</li>
+			</modExtensions>
+		</value>
+  </Operation>
+  
+</Patch>
+
