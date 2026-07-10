@@ -49,6 +49,20 @@
 						</value>
 					</li>
 				</extraDecorations>
+				<extraDecorationPreset>
+					<li>
+						<key>Seg_Apparel_FlakHelmet</key>
+						<value>
+							<li>Seg_FlakHelmetMilitarumPreset</li>
+						</value>
+					</li>
+					<li>
+						<key>Seg_Apparel_FlakArmour</key>
+						<value>
+							<li>Seg_FlakArmourMilitarumPreset</li>
+						</value>
+					</li>
+				</extraDecorationPreset>
 				</li>
 			</modExtensions>
 		</value>

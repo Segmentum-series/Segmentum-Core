@@ -15,32 +15,32 @@ Apothecary red: (162, 54, 39)
 
     <Core40k.DecorationPresetDef>
         <defName>Seg_FlakHelmetMilitarumPreset</defName>
-        <label>Militarum flak helmet</label>
+        <label>Astra Militarum</label>
         <appliesTo>
             <li>Seg_Apparel_FlakHelmet</li>
         </appliesTo>
         <presetData>
             <Seg_Deco_FlakHelmetSkull>
                 <flipped>false</flipped>
-                <colour>(240,176,29)</colour>
-                <colourTwo>(240,176,29)</colourTwo>
-                <colourThree>(240,176,29)</colourThree>
+                <colour>(173,178,178)</colour>
+                <colourTwo>(173,178,178)</colourTwo>
+                <colourThree>(173,178,178)</colourThree>
             </Seg_Deco_FlakHelmetSkull>
         </presetData>
     </Core40k.DecorationPresetDef>
 
     <Core40k.DecorationPresetDef>
         <defName>Seg_FlakArmourMilitarumPreset</defName>
-        <label>Militarum flak armour</label>
+        <label>Astra Militarum</label>
         <appliesTo>
             <li>Seg_Apparel_FlakArmour</li>
         </appliesTo>
         <presetData>
             <Seg_Deco_FlakArmourBreastplateEagle>
                 <flipped>false</flipped>
-                <colour>(240,176,29)</colour>
-                <colourTwo>(240,176,29)</colourTwo>
-                <colourThree>(240,176,29)</colourThree>
+                <colour>(173,178,178)</colour>
+                <colourTwo>(173,178,178)</colourTwo>
+                <colourThree>(173,178,178)</colourThree>
             </Seg_Deco_FlakArmourBreastplateEagle>
         </presetData>
     </Core40k.DecorationPresetDef>	
