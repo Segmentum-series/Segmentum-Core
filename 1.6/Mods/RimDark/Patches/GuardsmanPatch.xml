@@ -20,53 +20,59 @@
 			</apparelRequired>
 		</value>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/modExtensions</xpath>
+
+    <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]</xpath>
+        <value>
+            <modExtensions/>
+        </value>
+    </nomatch>
+</Operation>
   <Operation Class="PatchOperationAdd">
-		<xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]</xpath>
-		<value>
-			<modExtensions>
-				<li Class="Core40k.DefModExtension_PawnKindCustomization">
-				<defaultColorSelection>
-					<li>
-						<key>Seg_FlakArmour_ColorPreset_2</key>
-						<value>TryMatch</value>
-					</li>
-					<li>
-						<key>Seg_MarsLasgun_ColorPreset_1</key>
-						<value>TryMatch</value>
-					</li>
-				</defaultColorSelection>
-				<extraDecorations>
-					<li>
-						<key>Seg_Apparel_FlakHelmet</key>
-						<value>
-							<li>Seg_Deco_FlakHelmetSkull</li>
-						</value>
-					</li>
-					<li>
-						<key>Seg_Apparel_FlakArmour</key>
-						<value>
-							<li>Seg_Deco_FlakArmourBreastplateEagle</li>
-						</value>
-					</li>
-				</extraDecorations>
-				<extraDecorationPreset>
-					<li>
-						<key>Seg_Apparel_FlakHelmet</key>
-						<value>
-							<li>Seg_FlakHelmetMilitarumPreset</li>
-						</value>
-					</li>
-					<li>
-						<key>Seg_Apparel_FlakArmour</key>
-						<value>
-							<li>Seg_FlakArmourMilitarumPreset</li>
-						</value>
-					</li>
-				</extraDecorationPreset>
-				</li>
-			</modExtensions>
-		</value>
-  </Operation>
+    <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/modExtensions</xpath>
+    <value>
+        <li Class="Core40k.DefModExtension_PawnKindCustomization">
+            <defaultColorSelection>
+                <li>
+                    <key>Seg_FlakArmour_ColorPreset_2</key>
+                    <value>TryMatch</value>
+                </li>
+                <li>
+                    <key>Seg_MarsLasgun_ColorPreset_1</key>
+                    <value>TryMatch</value>
+                </li>
+            </defaultColorSelection>
+
+            <extraDecorations>
+                <li>
+                    <key>Seg_Apparel_FlakHelmet</key>
+                    <value>
+                        <li>Seg_Deco_FlakHelmetSkull</li>
+                    </value>
+                </li>
+                <li>
+                    <key>Seg_Apparel_FlakArmour</key>
+                    <value>
+                        <li>Seg_Deco_FlakArmourBreastplateEagle</li>
+                    </value>
+                </li>
+            </extraDecorations>
+
+            <extraDecorationPreset>
+                <li>
+                    <key>Seg_Apparel_FlakHelmet</key>
+                    <value>Seg_FlakHelmetMilitarumPreset</value>
+                </li>
+                <li>
+                    <key>Seg_Apparel_FlakArmour</key>
+                    <value>Seg_FlakArmourMilitarumPreset</value>
+                </li>
+            </extraDecorationPreset>
+        </li>
+    </value>
+</Operation>
   
 </Patch>
 
