@@ -65,10 +65,6 @@
           <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3047564391\1.6\Assemblies\taranchuk_lasers.dll</HintPath>
           <Private>False</Private>
         </Reference>
-        <Reference Include="SaveOurShip2">
-          <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShip2\1.6\Assemblies\ShipsHaveInsides.dll</HintPath>
-          <Private>False</Private>
-        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Harmony\Harmony_DateReadoutStringAt.cs" />
@@ -91,7 +87,7 @@
         <Compile Include="ApparelAcidify.cs" />
         <Compile Include="RanksParts.cs" />
         <Compile Include="GrenadeCharges.cs" />
-        <Compile Include="SegShipDef.cs" />
+        <!--<Compile Include="SegShipDef.cs" />-->
         <!--<Compile Include="GameComponent_WarrantTimer.cs" />-->
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
