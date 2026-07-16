@@ -83,13 +83,13 @@
 			<li Class="VEF.Things.ThingDefExtension">
 				<weaponCarryDrawOffsets>
 					<north>
-						<angleOffset>-20</angleOffset>
+						<angleOffset>0</angleOffset>
 					</north>
 					<east>
 						<drawOffset>(0, 0, -0.1)</drawOffset>
 					</east>
 					<south>
-						<angleOffset>-20</angleOffset>
+						<angleOffset>0</angleOffset>
 						<drawOffset>(0, 0, -0.1)</drawOffset>
 					</south>
 					<west>
