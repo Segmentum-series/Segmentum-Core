@@ -87,7 +87,7 @@
         <Compile Include="ApparelAcidify.cs" />
         <Compile Include="RanksParts.cs" />
         <Compile Include="GrenadeCharges.cs" />
-        <!--<Compile Include="SegShipDef.cs" />-->
+        <Compile Include="Heddif_Comp_Removal.cs" />
         <!--<Compile Include="GameComponent_WarrantTimer.cs" />-->
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

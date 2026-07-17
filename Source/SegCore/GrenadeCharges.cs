@@ -92,4 +92,82 @@ namespace seg
             return result;
         }
     }
+    public class CompProperties_AbilityLaunchProjectileBurst : CompProperties_AbilityLaunchProjectile
+{
+    public int burstCount = 1;
+    public float ticksBetweenShots = 10f;
+
+    public CompProperties_AbilityLaunchProjectileBurst()
+    {
+        this.compClass = typeof(CompAbilityEffect_LaunchProjectileBurst);
+    }
+}
+public class CompAbilityEffect_LaunchProjectileBurst : CompAbilityEffect_WithDuration
+{
+    public new CompProperties_AbilityLaunchProjectileBurst Props
+        => (CompProperties_AbilityLaunchProjectileBurst)this.props;
+
+    private int shotsFired;
+    private int nextShotTick;
+    private LocalTargetInfo storedTarget;
+    public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
+            {
+                base.Apply(target, dest);
+
+                storedTarget = target;
+                shotsFired = 0;
+                nextShotTick = Find.TickManager.TicksGame;
+
+                int totalBurstTicks = (int)(Props.ticksBetweenShots * (Props.burstCount - 1)) + 1;
+
+                if (totalBurstTicks < 1)
+                    totalBurstTicks = 1;
+                parent.pawn.stances.SetStance(new Stance_Warmup(totalBurstTicks, storedTarget, parent.verb));
+            }
+    public override void CompTick()
+                {
+                    base.CompTick();
+
+                    if (storedTarget.IsValid)
+                    {
+                        parent.pawn.rotationTracker.FaceCell(storedTarget.Cell);
+                    }
+
+                    if (shotsFired >= Props.burstCount)
+                        return;
+
+                    int currentTick = Find.TickManager.TicksGame;
+
+                    if (currentTick >= nextShotTick)
+                    {
+                        LaunchProjectile(storedTarget);
+                        shotsFired++;
+
+                        nextShotTick = currentTick + (int)Props.ticksBetweenShots;
+                    }
+                }
+
+    private void LaunchProjectile(LocalTargetInfo target)
+    {
+        if (Props.projectileDef == null)
+            return;
+
+        Pawn pawn = parent.pawn;
+
+        Projectile proj = (Projectile)GenSpawn.Spawn(
+            Props.projectileDef,
+            pawn.Position,
+            pawn.Map
+        );
+
+        proj.Launch(
+            pawn,
+            pawn.DrawPos,
+            target,
+            target,
+            ProjectileHitFlags.IntendedTarget,
+            parent.verb.preventFriendlyFire
+        );
+    }
+}
 }
