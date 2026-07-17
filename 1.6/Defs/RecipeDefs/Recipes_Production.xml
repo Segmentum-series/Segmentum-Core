@@ -210,14 +210,15 @@
 
 
 <!-- non-butcher way to get limbs out, needs to be  in core so please keep description saying that its a waste to -->
-<RecipeDef>
+<RecipeDef MayRequire="REDACTED.Segmentum.Servitors">
     <defName>Seg_SERV_EthicalButchery</defName> <!--Directly called in c#, do not change unless you're recompiling the .cs and changing it there too-->
     <label>recover servitor parts</label>
-    <description>use strong chemicals, cleavers and elbow grease to remove and clean the corpse, recovering serivtor parts. the harsh process strips the corpse of the ever-useful meat and leather, and just retrieves the servitor parts back. A waste, but certian not to upset people as much. Wasteful, if they have no parts to recover.</description>
-    <jobString>Recovering Servitor Parts</jobString>
+    <description>Recover mechanical parts from a dead servitor. The harsh chemical and surgical treatment required to extract the machinery will destroy the rest of the servitor in the process, as well as any non-servitor implants and augmetics. The operation can be performed on any corpse but if there are no suitable parts to remove, the corpse will simply be destroyed.</description>
+    <jobString>recovering servitor parts</jobString>
     <workAmount>800</workAmount>
     <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
     <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
     <effectWorking>ButcherFlesh</effectWorking>
     <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
@@ -240,7 +241,12 @@
     </fixedIngredientFilter>
     <products />
     <recipeUsers>
-        <li>TableButcher</li>
+        <li>FabricationBench</li>
+        <li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AugmeticsTable</li>
     </recipeUsers>
+    <researchPrerequisite>Seg_Servitors_ServitudeImperpituis</researchPrerequisite>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+    </skillRequirements>
 </RecipeDef>
 </Defs>
