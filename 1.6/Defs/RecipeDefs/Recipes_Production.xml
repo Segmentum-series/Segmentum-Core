@@ -224,22 +224,46 @@
     <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
     <interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
     <uiIconThing>Meat_Muffalo</uiIconThing>
-    <ingredients>
-        <li>
-            <filter>
-                <categories>
-                    <li>CorpsesHumanlike</li>
-                </categories>
-            </filter>
-            <count>1</count>
-        </li>
-    </ingredients>
-    <fixedIngredientFilter>
-        <categories>
-            <li>CorpsesHumanlike</li>
-        </categories>
-    </fixedIngredientFilter>
+	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Corpse_Human</li>
+					</thingDefs>
+
+					<specialFiltersToAllow>
+						<li>Seg_SERV_ServitorCorpseFilter</li>
+						<li>AllowFresh</li>
+						<li>AllowCorpsesColonist</li>
+						<li>AllowCorpsesStranger</li>
+					</specialFiltersToAllow>
+					<specialFiltersToDisallow>
+						<li>AllowRotten</li>
+						<li>Seg_SERV_NonServitorCorpseFilter</li>
+					</specialFiltersToDisallow>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Corpse_Human</li>
+			</thingDefs>
+
+			<specialFiltersToAllow>
+				<li>Seg_SERV_ServitorCorpseFilter</li>
+				<li>AllowFresh</li>
+				<li>AllowCorpsesColonist</li>
+				<li>AllowCorpsesStranger</li>
+			</specialFiltersToAllow>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+				<li>Seg_SERV_NonServitorCorpseFilter</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
     <products />
+	
     <recipeUsers>
         <li>FabricationBench</li>
         <li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AugmeticsTable</li>

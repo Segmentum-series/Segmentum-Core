@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>Seg_ImperiumWeapons</defName>
+		<label>Imperium weaponry</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Seg_ImperiumArmour</defName>
+		<label>Imperium armour</label>
+		<parent>ApparelArmor</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>Seg_ImperiumWorkGear</defName>
+		<label>Imperium work gear</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	 <ThingCategoryDef>
+      <defName>Seg_ImperiumArtifactBuildings</defName>
+      <label>Imperial artifacts</label>
+      <parent>BuildingsSpecial</parent>
+    </ThingCategoryDef>
+	<SpecialThingFilterDef>
+		<defName>Seg_SERV_ServitorCorpseFilter</defName>
+		<label>servitor corpses</label>
+		<workerClass>seg.SpecialThingFilterWorker_ServitorCorpses</workerClass>
+		<allowedByDefault>true</allowedByDefault>
+		<parentCategory>CorpsesHumanlike</parentCategory>
+		<description>Allow the dead bodies of servitors.</description>
+		<!--<saveKey>allowCorpsesServitor</saveKey>-->
+	</SpecialThingFilterDef>
+	<SpecialThingFilterDef>
+		<defName>Seg_SERV_NonServitorCorpseFilter</defName>
+		<label>non‑servitor corpses</label>
+		<workerClass>seg.SpecialThingFilterWorker_NonServitorCorpses</workerClass>
+		<allowedByDefault>true</allowedByDefault>
+		<parentCategory>CorpsesHumanlike</parentCategory>
+		<description>allow corpses untouched by the machine god.</description>
+   </SpecialThingFilterDef>
+	 <!--<ThingCategoryDef>
+      <defName>Seg_SERV_ServitorCorpses</defName>
+      <label>servitor corpses</label>
+      <parentCategory>CorpsesHumanlike</parentCategory>
+	  <childSpecialFilters>
+		<li>Seg_SERV_ServitorCorpseFilter</li>
+	  </childSpecialFilters>
+    </ThingCategoryDef>-->
+</Defs>
