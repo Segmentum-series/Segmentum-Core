@@ -3,7 +3,7 @@
 	<!-- Mars lasgun -->
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Seg_Gun_MarsLasgun</defName>
-		<label>Lasgun (Mars-pattern)</label>
+		<label>lasgun (Mars-pattern)</label>
 		<description>Like all lasguns, the Mars-pattern is not the most powerful firearm, but it is reliable, logistically simple, and can stop a charging greenskin at fifty paces with an accurate grouping of lasbolts. This is one of the oldest patterns of lasgun still in use in the Imperium, and is still frequently found in the hands of noble retinues or Inquisition warbands as well as seeing continuing use by forces supplied by the forge world of Mars.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_Ranged_MarsLasgun</texPath>
