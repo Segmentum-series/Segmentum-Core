@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<Core40k.ColourPresetDef Name="Seg_ColorPreset_GenericVanillaLeathery" Abstract="True">
-		<appliesTo>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_BodyguardUniform</li>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_TraderCoat</li>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_TraderShirt</li>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_UtilityApron</li>
-		</appliesTo>
-	</Core40k.ColourPresetDef>
-
-	<Core40k.ColourPresetDef Name="Seg_ColorPreset_GenericVanillaFurry" Abstract="True">
-		<appliesTo>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_BodyguardUniform</li>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_TraderCoat</li>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_UtilityJumpsuit</li>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_UtilityApron</li>
-		</appliesTo>
-	</Core40k.ColourPresetDef>
-
 	<Core40k.ColourPresetDef Name="Seg_ColorPreset_GenericVanillaFabrics" Abstract="True">
 		<appliesTo>
+			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_BodyguardHat</li>
 			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_BodyguardUniform</li>
 			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_TraderCoat</li>
 			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_TraderShirt</li>
@@ -37,8 +20,8 @@
 
 <!-- Leathery -->
 	<!-- Patch leather -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
-		<defName>Seg_GenericVanillaLeathery_ColorPreset_1</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_1</defName>
 		<label>Patchleather</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(90,75,60)</primaryColour>
@@ -47,8 +30,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Lizard leather -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
-		<defName>Seg_GenericVanillaLeathery_ColorPreset_2</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_2</defName>
 		<label>Lizardskin</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(101,116,58)</primaryColour>
@@ -57,8 +40,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Hippo leather -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
-		<defName>Seg_GenericVanillaLeathery_ColorPreset_3</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_3</defName>
 		<label>Hippo leather</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(104,90,98)</primaryColour>
@@ -67,8 +50,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Mastodon leather -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
-		<defName>Seg_GenericVanillaLeathery_ColorPreset_4</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_4</defName>
 		<label>Mastodon leather</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(141,103,70)</primaryColour>
@@ -77,8 +60,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Rhino leather -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaLeathery">
-		<defName>Seg_GenericVanillaLeathery_ColorPreset_5</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_5</defName>
 		<label>Rhinoceros leather</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(150,150,150)</primaryColour>
@@ -89,8 +72,8 @@
 
 <!-- Furs -->
 	<!-- Fox leather -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
-		<defName>Seg_GenericVanillaFurry_ColorPreset_1</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_6</defName>
 		<label>Foxfur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(178,100,34)</primaryColour>
@@ -99,8 +82,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Heavy leather -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
-		<defName>Seg_GenericVanillaFurry_ColorPreset_2</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_7</defName>
 		<label>Heavy fur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(189,161,116)</primaryColour>
@@ -109,8 +92,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Panthera fur -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
-		<defName>Seg_GenericVanillaFurry_ColorPreset_3</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_8</defName>
 		<label>Panthera fur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(60,60,60)</primaryColour>
@@ -119,8 +102,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Chincilla fur -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
-		<defName>Seg_GenericVanillaFurry_ColorPreset_4</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_9</defName>
 		<label>Chinchilla fur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(178,170,158)</primaryColour>
@@ -129,8 +112,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Thrumbo fur -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
-		<defName>Seg_GenericVanillaFurry_ColorPreset_5</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_10</defName>
 		<label>Thrumbo fur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(233,233,233)</primaryColour>
@@ -139,8 +122,8 @@
 	</Core40k.ColourPresetDef>
 
 	<!-- Mink fur -->
-	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFurry">
-		<defName>Seg_GenericVanillaFurry_ColorPreset_6</defName>
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_11</defName>
 		<label>Mink fur</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(113,75,62)</primaryColour>
@@ -152,7 +135,7 @@
 <!-- Fabrics -->
 	<!-- Synthread -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
-		<defName>Seg_GenericVanillaFabrics_ColorPreset_1</defName>
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_12</defName>
 		<label>Synthread</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(174,219,228)</primaryColour>
@@ -162,7 +145,7 @@
 
 	<!-- Devilstrand -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
-		<defName>Seg_GenericVanillaFabrics_ColorPreset_2</defName>
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_13</defName>
 		<label>Devilstrand</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(180,60,60)</primaryColour>
@@ -172,7 +155,7 @@
 
 	<!-- Hyperweave -->
 	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaFabrics">
-		<defName>Seg_GenericVanillaFabrics_ColorPreset_3</defName>
+		<defName>Seg_GenericVanillaFabrics_ColorPreset_14</defName>
 		<label>Hyperweave</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(0,106,126)</primaryColour>
