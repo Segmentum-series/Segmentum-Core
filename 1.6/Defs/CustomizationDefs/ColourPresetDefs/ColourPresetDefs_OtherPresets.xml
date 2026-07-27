@@ -13,7 +13,6 @@
 
 	<Core40k.ColourPresetDef Name="Seg_ColorPreset_GenericVanillaMetals" Abstract="True">
 		<appliesTo>
-			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_UtilityMask</li>
 			<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Apparel_UtilityHelmet</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
@@ -215,4 +214,33 @@
 		<tertiaryColour>(180,173,150)</tertiaryColour>
 	</Core40k.ColourPresetDef>
 
+	<!-- Hazard yellow -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaMetals">
+		<defName>Seg_GenericVanillaMetals_ColorPreset_6</defName>
+		<label>Hazard yellow</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(231,177,43)</primaryColour>
+		<secondaryColour>(231,177,43)</secondaryColour>
+		<tertiaryColour>(231,177,43)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Hazard red -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaMetals">
+		<defName>Seg_GenericVanillaMetals_ColorPreset_7</defName>
+		<label>Hazard red</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(178,42,42)</primaryColour>
+		<secondaryColour>(178,42,42)</secondaryColour>
+		<tertiaryColour>(178,42,42)</tertiaryColour>
+	</Core40k.ColourPresetDef>
+
+	<!-- Hazard blue -->
+	<Core40k.ColourPresetDef ParentName="Seg_ColorPreset_GenericVanillaMetals">
+		<defName>Seg_GenericVanillaMetals_ColorPreset_8</defName>
+		<label>Hazard blue</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(51,96,187)</primaryColour>
+		<secondaryColour>(51,96,187)</secondaryColour>
+		<tertiaryColour>(51,96,187)</tertiaryColour>
+	</Core40k.ColourPresetDef>
 </Defs>
