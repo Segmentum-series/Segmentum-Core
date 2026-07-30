@@ -2,3 +2,12 @@ Expedition
 Vanguard
 Pioneers
 Retinue
+Explorers
+Trailblazers
+Armsmen
+Crew
+Household
+Mercantile Force
+Pioneer Force
+Expedition Force
+Exploration Force
