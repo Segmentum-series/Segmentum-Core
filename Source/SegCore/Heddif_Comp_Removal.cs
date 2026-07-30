@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using Verse;
 using Verse.AI;
+using UnityEngine;
 
 namespace seg
 {
@@ -99,14 +101,14 @@ namespace seg
 
             if (!isServitor)
             {
-                Log.Message("[ks-serv-debug]not servitor.");
+                ///Log.Message("[ks-serv-debug]not servitor.");
                 return;
             }
 
             var comp = __result.TryGetComp<CompServitorCorpseFlag>();
             if (comp == null)
             {
-                Log.Message("[ks-serv-debug] MakeCorpse fired but CompServitorCorpseFlag was null on the corpse.");
+                ///Log.Message("[ks-serv-debug] MakeCorpse fired but CompServitorCorpseFlag was null on the corpse.");
                 return;
             }
 
@@ -148,55 +150,6 @@ namespace seg
             return typeof(Corpse).IsAssignableFrom(def.thingClass);
         }
     }
-                   
-              [StaticConstructorOnStartup]
-            public static class Patch_RemoveServitorChipRecipe
-            {
-                static Patch_RemoveServitorChipRecipe()
-                {
-                    var bad = new HashSet<string>
-                    {
-                        "RemoveImplant_Seg_ServitorChip",
-                        "RemoveImplantt_Seg_Servitors_MedicaeChip",
-                        "RemoveImplant_Seg_Servitors_CombatChip",
-                        "RemoveImplant_Seg_Servitors_LexomatChip",
-                        "RemoveHediff_Seg_Servitors_ServitorizationHediff",
-                        "RemoveHediff_Seg_Servitors_MedicaeServitorHediff",
-                        "RemoveHediff_Seg_Servitors_CombatServitorHediff",
-                        "RemoveHediff_Seg_Servitors_LexomatServitorHediff"
-                    };
-
-                    Log.Message($"[ks-serv-debug] Removing {bad.Count} recipes.");
-
-                    foreach (var defName in bad)
-                    {
-                        var recipe = DefDatabase<RecipeDef>.GetNamedSilentFail(defName);
-
-                        if (recipe != null)
-                        {
-                            DefDatabase<RecipeDef>.AllDefsListForReading.Remove(recipe);
-                            Log.Message($"[ks-serv-debug] Removed {recipe.defName}");
-                        }
-                        else
-                        {
-                            Log.Message($"[ks-serv-debug] Not found: {defName}");
-                        }
-                    }
-                }
-            }
-
-            [StaticConstructorOnStartup]
-            public static class SegServitorRecipeDump
-            {
-                static SegServitorRecipeDump()
-                {
-                    foreach (var r in DefDatabase<RecipeDef>.AllDefs)
-                    {
-                        if (r.defName.Contains("Seg_Servitors") || r.defName.Contains("Servitor"))
-                            Log.Message($"[ks-serv-debug] RecipeDef: {r.defName}");
-                    }
-                }
-            }
     public static class RemovableAfterDeathUtility
     {
         public static List<Thing> Extract(Corpse corpse)
