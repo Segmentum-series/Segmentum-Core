@@ -5,6 +5,8 @@ Absolom
 Adare
 Aemos
 Agustius
+Aggranoza
+Aizdar
 Albertius
 Alciphron
 Aldalon
@@ -20,6 +22,8 @@ Angevin
 Annerson
 Ansen
 Antonov
+Aquairre
+Arabarti
 Arbute
 Arcadius
 Archimaxes
@@ -43,6 +47,7 @@ Astolyev
 Astor
 Atebe
 Auber
+Awl
 Babbist
 Baldryk
 Bale
@@ -51,6 +56,7 @@ Baltan
 Balthagar
 Banda
 Banda
+Baral
 Baranov
 Barathus
 Barbaden
@@ -65,6 +71,7 @@ Bastel
 Baum
 Bela
 Belje
+Belledar
 Belot
 Beltayn
 Benedek
@@ -128,6 +135,7 @@ Cassilus
 Castin
 Castyx
 Catallus
+Cathek
 Cavalerio
 Cawdor
 Chass
@@ -155,7 +163,6 @@ Crassus
 Creed
 Cridd
 Criell
-Criid
 Criid
 Croe
 Cross
@@ -194,6 +201,7 @@ de Montbard
 de Stael
 de Valk
 de Valtos
+De Vore
 DeAniasie
 Degallio
 Dekkler
@@ -347,6 +355,7 @@ Gorman
 Gorn
 Gorvos
 Goss
+Gotha
 Govine
 Grayle
 Greer
@@ -469,6 +478,7 @@ Jagdea
 Janssen
 Jaromir
 Jaxon
+Jeffers
 Jei
 Jek
 Jellaqua
@@ -521,6 +531,7 @@ Kessen
 Kevlin
 Keztral
 Khol
+Khorlu
 Khorvayne
 Kinra
 Klay
@@ -579,6 +590,7 @@ Lansung
 Larkin
 Laserian
 Lasko
+Lathimon
 Laymon
 Lazaro
 Leclan
@@ -645,6 +657,7 @@ Mane
 Mannheim
 Manus
 March
+Marchandrei
 Marison
 Markov
 Marner
@@ -724,6 +737,7 @@ Mortz
 Mott
 Mouhausen
 Mtane
+Murad
 Mung
 Munsell
 Murlees
@@ -765,6 +779,7 @@ Oliton
 Ologistion
 Omes
 Orechiel
+Orelius
 Oriss
 Orlock
 Ormon
@@ -776,6 +791,7 @@ Orrin
 Orsellio
 Orten
 Osmium
+Osperoux
 Osowicz
 Osric
 Ossian
@@ -788,11 +804,12 @@ Othis
 Othram
 Ozmac
 Paal
+Pallandro
 Palmar
 Palos
 Paquin
 Parjita
-Parvenue
+Parnevue
 Pask
 Pavlac
 Pavo
@@ -1027,6 +1044,7 @@ Trajan
 Trask
 Trazgo
 Traxel
+Tregor
 Trenth
 Trentius
 Trevayn
@@ -1052,6 +1070,7 @@ Umenedies
 Unterrio
 Unurndel
 Unwin
+Urussalin
 UvTerra
 Vaarak
 Vadim
@@ -1064,6 +1083,7 @@ van Calox
 van Cjester
 van der Grauss
 van der Vosteen
+van Dyne
 van Gelder
 van Halmere
 van Hinkle
@@ -1087,6 +1107,7 @@ Vandis
 VanLeskus
 Var Koldenvaal
 Varl
+Varnius
 Varonius
 Vash
 Vasiliki
@@ -1180,9 +1201,11 @@ Yemenev
 Yendl
 Ymerich
 Yorn
+Yuen
 Yurne
 Zabine
 Zabine
+Zanatov
 Zane
 Zeck
 Zedoff

@@ -10,11 +10,13 @@
         <li>SegImperiumFirst_Male->SegmentumNames/Names/ImperiumFirst_Male</li>
 	    <li>SegImperiumFirst_Female->SegmentumNames/Names/ImperiumFirst_Female</li>
         <li>SegImperiumLast->SegmentumNames/Names/ImperiumLast</li>
+        <li>SegImperiumLastRT->SegmentumNames/Names/ImperiumLastRT</li>
       </rulesFiles>
 	  <rulesStrings>
         <li>SegImperiumFirstMale->[SegImperiumFirst_Male]</li>
         <li>SegImperiumFirstFemale->[SegImperiumFirst_Female]</li>
         <li>SegImperiumLast->[SegImperiumLast]</li>
+        <li>SegImperiumLastRT->[SegImperiumLastRT]</li>
       </rulesStrings>
 	  </rulePack>
   </RulePackDef>
@@ -81,5 +83,29 @@
       </rulesFiles>
     </rulePack>
   </RulePackDef>
- 
+
+  <RulePackDef>
+    <defName>SegNamerPersonRogueTraderMale</defName>
+	<include>
+		<li>SegImperiumNameUtility</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[SegImperiumFirstMale] [SegImperiumLastRT]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>SegNamerPersonRogueTraderFemale</defName>
+	<include>
+		<li>SegImperiumNameUtility</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[SegImperiumFirstFemale] [SegImperiumLastRT]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
 </Defs>
