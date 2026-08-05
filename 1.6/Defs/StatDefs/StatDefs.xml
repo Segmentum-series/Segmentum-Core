@@ -109,4 +109,13 @@
         <showIfUndefined>false</showIfUndefined>
         <description>Offset to the base intellectual skill of the pawn. Typically applied by specialized bionic parts.</description>
 </StatDef>
+<StatDef>
+    <defName>Seg_RadResistance</defName>
+    <label>radiation resistance</label>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>PercentOne</toStringStyle>
+        <showIfUndefined>false</showIfUndefined>
+        <description>Offset to the base radiation resistance of the pawn. Typically applied by specialized bionic parts.</description>
+</StatDef>
 </Defs>

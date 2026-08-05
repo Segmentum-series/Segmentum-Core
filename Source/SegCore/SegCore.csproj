@@ -89,6 +89,8 @@
         <Compile Include="GrenadeCharges.cs" />
         <Compile Include="Heddif_Comp_Removal.cs" />
         <Compile Include="ServitorSurgeryHarmonyPatch.cs" />
+        <Compile Include="HarmonyPatchTraderNames.cs" />
+        <Compile Include="HarmonyPatchRadResistance.cs" />
         <!--<Compile Include="GameComponent_WarrantTimer.cs" />-->
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
