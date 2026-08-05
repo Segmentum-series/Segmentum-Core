@@ -116,6 +116,6 @@
     <defaultBaseValue>0</defaultBaseValue>
     <toStringStyle>PercentOne</toStringStyle>
         <showIfUndefined>false</showIfUndefined>
-        <description>Offset to the base radiation resistance of the pawn. Typically applied by specialized bionic parts.</description>
+        <description>How well this creature resists radiation buildup.</description>
 </StatDef>
 </Defs>
