@@ -118,8 +118,8 @@
   
 	<ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_CargoPack</defName>
-		<label>cargo pack</label>
-		<description>cargo pack upgrade for seg armour</description>
+		<label>field pouches</label>
+		<description>These pouches can be worn to enable the wearer to carry more equipment - especially useful on expeditions and for extended field operations. When worn with appropriate armour they will take the form of an integrated backpack, but provides its extra carrying capacity even if worn by itself.</description>
 		<graphicData>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
@@ -128,14 +128,17 @@
 		<statBases>
 		<MarketValue>150</MarketValue>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 		<Steel>20</Steel>
-		<Cloth>10</Cloth>
+		<Cloth>20</Cloth>
 		</costList>
 		<equippedStatOffsets>
-				<MoveSpeed>-0.15</MoveSpeed>
-				<CarryingCapacity>50</CarryingCapacity>
-				<VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
+				<MoveSpeed>-0.10</MoveSpeed>
+				<CarryingCapacity>35</CarryingCapacity>
+				<VEF_MassCarryCapacity>35</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
         <apparel>
             <wornGraphicPaths>
@@ -150,25 +153,28 @@
 	<ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_MedicaeBag</defName>
 		<label>medicae bag</label>
-		<description>medicae bag upgrade for seg armour</description>
+		<description>This medicae bag can be worn to enable the wearer to carry some extra equipment and first aid essentials when providing medical treatment. When worn with appropriate armour it will take the form of an integrated backpack, but provides its bonuses even if worn by itself.</description>
 		<graphicData>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<texPath>Things/Apparel/MedicaeBag/Seg_MedicaeBag</texPath>
 		</graphicData>
 		<statBases>
-		<MarketValue>150</MarketValue>
+		<MarketValue>200</MarketValue>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>DrugProduction</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 		<Steel>20</Steel>
-		<Cloth>10</Cloth>
+		<Cloth>30</Cloth>
 		<MedicineIndustrial>2</MedicineIndustrial>
 		</costList>
 		<equippedStatOffsets>
-				<MoveSpeed>-0.15</MoveSpeed>
-				<CarryingCapacity>15</CarryingCapacity>
-				<VEF_MassCarryCapacity>15</VEF_MassCarryCapacity>
-				<MedicalTendQuality>0.15</MedicalTendQuality>
+				<MoveSpeed>-0.10</MoveSpeed>
+				<CarryingCapacity>10</CarryingCapacity>
+				<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
+				<MedicalTendQuality>0.10</MedicalTendQuality>
 				 <MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
 				<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
 		</equippedStatOffsets>
@@ -184,23 +190,26 @@
 	</ThingDef>
     <ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_PowerPack</defName>
-		<label>power pack</label>
-		<description>power pack upgrade for seg armour</description>
+		<label>powerpack</label>
+		<description>This powerpack can be worn to provide power to certain weapons that depend on a portable source of energy. When worn with appropriate armour it will take the form of an integrated backpack, but provides charge to weapons even if worn by itself.</description>
 		<graphicData>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<texPath>Things/Apparel/PowerPack/Seg_PowerPack</texPath>
 		</graphicData>
 		<statBases>
-		<MarketValue>150</MarketValue>
+		<MarketValue>350</MarketValue>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>Batteries</researchPrerequisite>
+		</recipeMaker>
 		<costList>
-		<Steel>20</Steel>
-		<Cloth>10</Cloth>
+		<Steel>30</Steel>
+		<Uranium>5</Uranium>
 		<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<equippedStatOffsets>
-				<MoveSpeed>-0.25</MoveSpeed>
+				<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
         <apparel>
             <wornGraphicPaths>
@@ -223,30 +232,31 @@
 		</comps>
 	</ThingDef>
 
-    <ThingDef ParentName="Seg_AccessoryBase">
+    <!--ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_VoxCaster</defName>
-		<label>vox caster</label>
-		<description>vox caster upgrade for seg armour</description>
+		<label>voxcaster</label>
+		<description>This voxcaster can be worn to enable the wearer to act as a communications specialist in the field, relaying messages and helping to co-ordinate the tasks of others nearby. When worn with appropriate armour it will take the form of an integrated backpack, but provides its bonuses even if worn by itself.</description>
 		<graphicData>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<texPath>Things/Apparel/VoxCaster/Seg_VoxCaster</texPath>
 		</graphicData>
 		<statBases>
-		<MarketValue>150</MarketValue>
+		<MarketValue>400</MarketValue>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>Microelectronics</researchPrerequisite>
+		</recipeMaker>
 		<costList>
-            <Steel>20</Steel>
+            <Steel>35</Steel>
             <Cloth>10</Cloth>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<equippedStatOffsets>
 				<MoveSpeed>-0.15</MoveSpeed>
-				<CarryingCapacity>15</CarryingCapacity>
-				<VEF_MassCarryCapacity>15</VEF_MassCarryCapacity>
-				 <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.60</CertaintyLossFactor>
-                 <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
-                 <SocialImpact>.30</SocialImpact>
+				<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.80</CertaintyLossFactor>
+                <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                <SocialImpact>.10</SocialImpact>
 		</equippedStatOffsets>
         <apparel>
             <wornGraphicPaths>
@@ -257,5 +267,5 @@
             <li Class="seg.CompProperties_HideWithBackpack"/>
         </comps>
 	 
-	</ThingDef>
+	</ThingDef-->
 </Defs>
