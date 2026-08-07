@@ -218,7 +218,7 @@
         </apparel>
         <comps>
         <li Class="CompProperties_ApparelReloadable">
-				<maxCharges>300</maxCharges>
+				<maxCharges>150</maxCharges>
 				<ammoDef>Uranium</ammoDef>
 				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
 				<baseReloadTicks>60</baseReloadTicks>
