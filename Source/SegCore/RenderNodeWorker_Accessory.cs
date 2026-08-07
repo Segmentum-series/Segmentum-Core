@@ -22,13 +22,13 @@ namespace seg
             ThingDef cargoPack  = DefDatabase<ThingDef>.GetNamed("Seg_Apparel_CargoPack",     false);
             ThingDef medicaeBag = DefDatabase<ThingDef>.GetNamed("Seg_Apparel_MedicaeBag",    false);
             ThingDef powerPack  = DefDatabase<ThingDef>.GetNamed("Seg_Apparel_PowerPack",     false);
-            ThingDef voxCaster  = DefDatabase<ThingDef>.GetNamed("Seg_Apparel_VoxCaster",     false);
+            ///ThingDef voxCaster  = DefDatabase<ThingDef>.GetNamed("Seg_Apparel_VoxCaster",     false);
             ThingDef jumpPack   = DefDatabase<ThingDef>.GetNamed("Apparel_PackJump",          false);
 
             bool hasCargo   = cargoPack  != null && worn.Any(a => a.def == cargoPack);
             bool hasMedical = medicaeBag != null && worn.Any(a => a.def == medicaeBag);
             bool hasPower   = powerPack  != null && worn.Any(a => a.def == powerPack);
-            bool hasComm    = voxCaster  != null && worn.Any(a => a.def == voxCaster);
+            ///bool hasComm    = voxCaster  != null && worn.Any(a => a.def == voxCaster);
             bool hasJump    = jumpPack   != null && worn.Any(a => a.def == jumpPack);
 
             if (ModsConfig.RoyaltyActive && hasJump)
@@ -43,8 +43,8 @@ namespace seg
             if (hasPower)
                 backpackPath += "_power";
 
-            if (hasComm)
-                backpackPath += "_communication";
+            ///if (hasComm)
+               /// backpackPath += "_communication";
 
             if (hasCargo && backpackPath.EndsWith("_cargo"))
                 cargoPack.graphicData.texPath = "";
@@ -55,8 +55,8 @@ namespace seg
             if (hasPower && backpackPath.EndsWith("_power"))
                 powerPack.graphicData.texPath = "";
 
-            if (hasComm && backpackPath.EndsWith("_communication"))
-                voxCaster.graphicData.texPath = "";
+            ///if (hasComm && backpackPath.EndsWith("_communication"))
+               ///voxCaster.graphicData.texPath = "";
 
             return GraphicDatabase.Get<Graphic_Multi>(
                 backpackPath,
