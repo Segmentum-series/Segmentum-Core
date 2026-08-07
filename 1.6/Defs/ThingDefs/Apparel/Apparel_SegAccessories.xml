@@ -1,0 +1,261 @@
+<Defs>
+ <ThingDef ParentName="ApparelBase" Name="Seg_AccessoryBase" Abstract="true">
+    <defName>Seg_AccessoryBase</defName>
+    
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>12000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>Seg_MunitorumEquipment</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>Seg_ImperialCraftingTable</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>Seg_Accessory</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+	   <wornGraphicData>
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                <north>
+                    <male>
+                        <offset>(-0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(-0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(-0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.5,-0.25)</offset>
+                    </fat>
+                </north>
+                <south>
+                    <male>
+                        <offset>(0.3, -0.25)</offset>
+                    </male>
+                    <female>
+                        <offset>(0.3,-0.3)</offset>
+                    </female>
+                    <thin>
+                        <offset>(0.2,-0.25)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.33,-0.4)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.5,-0.25)</offset>
+                    </fat>
+                </south>
+                <east>
+                    <offset>(-0.05,-0.3)</offset>
+					<hulk>
+                        <offset>(-0.1,-0.1)</offset>
+                    </hulk>
+                    <thin>
+                        <offset>(-0.1,-0.0)</offset>
+                    </thin>
+                    <female>
+                        <offset>(-0.05,-0.0)</offset>
+                    </female>
+                </east>
+                <male>
+                    <scale>(0.6,0.6)</scale>
+                </male>
+                <female>
+                    <scale>(0.6,0.6)</scale>
+                </female>
+                <thin>
+                    <scale>(0.7,0.7)</scale>
+                </thin>
+                <hulk>
+                    <scale>(0.75,0.75)</scale>
+                </hulk>
+                <fat>
+                    <scale>(0.75,0.75)</scale>
+                </fat>
+        </wornGraphicData>
+    </apparel>
+    <tradeTags>
+      <li>Seg_Accessory</li>
+    </tradeTags>
+
+       
+  </ThingDef>
+  
+	<ThingDef ParentName="Seg_AccessoryBase">
+		<defName>Seg_Apparel_CargoPack</defName>
+		<label>cargo pack</label>
+		<description>cargo pack upgrade for seg armour</description>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Things/Apparel/CargoPack/Seg_CargoPack</texPath>
+		</graphicData>
+		<statBases>
+		<MarketValue>150</MarketValue>
+		</statBases>
+		<costList>
+		<Steel>20</Steel>
+		<Cloth>10</Cloth>
+		</costList>
+		<equippedStatOffsets>
+				<MoveSpeed>-0.15</MoveSpeed>
+				<CarryingCapacity>50</CarryingCapacity>
+				<VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+        <apparel>
+            <wornGraphicPaths>
+                <li>Things/Apparel/CargoPack/Seg_CargoPack</li>
+            </wornGraphicPaths>
+        </apparel>
+         <comps>
+            <li Class="seg.CompProperties_HideWithBackpack"/>
+        </comps>
+	 
+	</ThingDef>
+	<ThingDef ParentName="Seg_AccessoryBase">
+		<defName>Seg_Apparel_MedicaeBag</defName>
+		<label>medicae bag</label>
+		<description>medicae bag upgrade for seg armour</description>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Things/Apparel/MedicaeBag/Seg_MedicaeBag</texPath>
+		</graphicData>
+		<statBases>
+		<MarketValue>150</MarketValue>
+		</statBases>
+		<costList>
+		<Steel>20</Steel>
+		<Cloth>10</Cloth>
+		<MedicineIndustrial>2</MedicineIndustrial>
+		</costList>
+		<equippedStatOffsets>
+				<MoveSpeed>-0.15</MoveSpeed>
+				<CarryingCapacity>15</CarryingCapacity>
+				<VEF_MassCarryCapacity>15</VEF_MassCarryCapacity>
+				<MedicalTendQuality>0.15</MedicalTendQuality>
+				 <MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
+				<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+		</equippedStatOffsets>
+        <apparel>
+            <wornGraphicPaths>
+                <li>Things/Apparel/MedicaeBag/Seg_MedicaeBag</li>
+            </wornGraphicPaths>
+        </apparel>
+         <comps>
+            <li Class="seg.CompProperties_HideWithBackpack"/>
+        </comps>
+	 
+	</ThingDef>
+    <ThingDef ParentName="Seg_AccessoryBase">
+		<defName>Seg_Apparel_PowerPack</defName>
+		<label>power pack</label>
+		<description>power pack upgrade for seg armour</description>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Things/Apparel/PowerPack/Seg_PowerPack</texPath>
+		</graphicData>
+		<statBases>
+		<MarketValue>150</MarketValue>
+		</statBases>
+		<costList>
+		<Steel>20</Steel>
+		<Cloth>10</Cloth>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<equippedStatOffsets>
+				<MoveSpeed>-0.25</MoveSpeed>
+		</equippedStatOffsets>
+        <apparel>
+            <wornGraphicPaths>
+                <li>Things/Apparel/PowerPack/Seg_PowerPack</li>
+            </wornGraphicPaths>
+        </apparel>
+        <comps>
+        <li Class="CompProperties_ApparelReloadable">
+				<maxCharges>300</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>powercell</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+			</li>
+            <li Class="seg.CompProperties_HideWithBackpack"/>
+		</comps>
+	</ThingDef>
+
+    <ThingDef ParentName="Seg_AccessoryBase">
+		<defName>Seg_Apparel_VoxCaster</defName>
+		<label>vox caster</label>
+		<description>vox caster upgrade for seg armour</description>
+		<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<texPath>Things/Apparel/VoxCaster/Seg_VoxCaster</texPath>
+		</graphicData>
+		<statBases>
+		<MarketValue>150</MarketValue>
+		</statBases>
+		<costList>
+            <Steel>20</Steel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<equippedStatOffsets>
+				<MoveSpeed>-0.15</MoveSpeed>
+				<CarryingCapacity>15</CarryingCapacity>
+				<VEF_MassCarryCapacity>15</VEF_MassCarryCapacity>
+				 <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.60</CertaintyLossFactor>
+                 <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                 <SocialImpact>.30</SocialImpact>
+		</equippedStatOffsets>
+        <apparel>
+            <wornGraphicPaths>
+                <li>Things/Apparel/VoxCaster/Seg_VoxCaster</li>
+            </wornGraphicPaths>
+        </apparel>
+         <comps>
+            <li Class="seg.CompProperties_HideWithBackpack"/>
+        </comps>
+	 
+	</ThingDef>
+</Defs>

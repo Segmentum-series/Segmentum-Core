@@ -92,6 +92,8 @@
         <Compile Include="HarmonyPatchTraderNames.cs" />
         <Compile Include="HarmonyPatchRadResistance.cs" />
         <Compile Include="HarmonyPatchTraderNamesWOTV.cs" />
+        <Compile Include="RenderNodeWorker_Accessory.cs" />
+        <Compile Include="Comps_Backpacks.cs" />
         <!--<Compile Include="GameComponent_WarrantTimer.cs" />-->
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
