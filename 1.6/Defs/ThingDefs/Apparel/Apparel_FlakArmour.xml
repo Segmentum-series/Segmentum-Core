@@ -171,6 +171,30 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/FlakArmour/Seg_FlakArmour</li>
 			</wornGraphicPaths>
+			<renderNodeProperties>
+				<!-- Backpacks -->
+                <li>
+                    <workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
+                    <nodeClass>Seg.PawnRenderNode_AttachmentAccessory</nodeClass> 
+                    <texPath>Things/Apparel/FlakArmour/Backpack/Seg_FlakArmour_Backpack</texPath>
+                    <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <dataEast>
+                            <layer>71</layer>
+                        </dataEast>
+                        <dataWest>
+                            <layer>71</layer>
+                        </dataWest>
+                        <dataNorth>
+                            <layer>80</layer>
+                        </dataNorth>
+                        <dataSouth>
+                            <layer>0</layer>
+                        </dataSouth>
+                    </drawData>
+                </li>
+			</renderNodeProperties>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -191,6 +215,7 @@
 				<defaultSecondaryColor>(110,110,110)</defaultSecondaryColor>
 				<defaultTertiaryColor>(110,110,110)</defaultTertiaryColor>
 			</li>
+			<li Class="seg.CompProperties_HasBackpack" />
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
