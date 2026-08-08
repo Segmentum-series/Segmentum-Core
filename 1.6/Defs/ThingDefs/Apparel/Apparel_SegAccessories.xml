@@ -300,7 +300,7 @@
 	<ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_PowerPack</defName>
 		<label>powerpack</label>
-		<description>This powerpack can be worn to provide power to certain weapons that depend on a portable source of energy. When worn with appropriate armour it will take the form of an integrated backpack, but provides charge to weapons even if worn by itself.</description>
+		<description>This powerpack can be worn to provide power to certain weapons that depend on a portable source of energy. When worn with appropriate armour it will take the form of an integrated backpack, but provides charge to weapons even if worn by itself. \n\n&lt;color=#bb8f04&gt;Contains a large dedicated power reserve, which can be refuelled with uranium&lt;/color&gt;.</description>
 		<graphicData>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
