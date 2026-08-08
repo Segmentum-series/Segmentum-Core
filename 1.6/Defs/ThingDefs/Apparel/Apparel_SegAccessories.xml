@@ -1,129 +1,130 @@
 <Defs>
- <ThingDef ParentName="ApparelBase" Name="Seg_AccessoryBase" Abstract="true">
-    <defName>Seg_AccessoryBase</defName>
-    
-    <tickerType>Normal</tickerType>
-    <techLevel>Spacer</techLevel>
-    <statBases>
-      <Mass>3</Mass>
-      <WorkToMake>12000</WorkToMake>
-      <Flammability>0.4</Flammability>
-      <EquipDelay>2</EquipDelay>
-    </statBases>
-    <recipeMaker>
-      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-      <researchPrerequisite>Seg_MunitorumEquipment</researchPrerequisite>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Machining</soundWorking>
-      <recipeUsers>
-        <li>Seg_ImperialCraftingTable</li>
-      </recipeUsers>
-      <useIngredientsForColor>false</useIngredientsForColor>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <displayPriority>300</displayPriority>
-    </recipeMaker>
-    <thingCategories>
-      <li>ApparelUtility</li>
-    </thingCategories>
-    <apparel>
-      <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <careIfDamaged>false</careIfDamaged>
-      <wearPerDay>0</wearPerDay>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-      <tags>
-        <li>Seg_Accessory</li>
-      </tags>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-	   <wornGraphicData>
-                <renderUtilityAsPack>true</renderUtilityAsPack>
-                <north>
-                    <male>
-                        <offset>(-0.3, -0.25)</offset>
-                    </male>
-                    <female>
-                        <offset>(-0.3,-0.3)</offset>
-                    </female>
-                    <thin>
-                        <offset>(-0.2,-0.25)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(-0.33,-0.4)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(-0.5,-0.25)</offset>
-                    </fat>
-                </north>
-                <south>
-                    <male>
-                        <offset>(0.3, -0.25)</offset>
-                    </male>
-                    <female>
-                        <offset>(0.3,-0.3)</offset>
-                    </female>
-                    <thin>
-                        <offset>(0.2,-0.25)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(0.33,-0.4)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0.5,-0.25)</offset>
-                    </fat>
-                </south>
-                <east>
-                    <offset>(-0.05,-0.3)</offset>
-					<hulk>
-                        <offset>(-0.1,-0.1)</offset>
-                    </hulk>
-                    <thin>
-                        <offset>(-0.1,-0.0)</offset>
-                    </thin>
-                    <female>
-                        <offset>(-0.05,-0.0)</offset>
-                    </female>
-                </east>
-                <male>
-                    <scale>(0.6,0.6)</scale>
-                </male>
-                <female>
-                    <scale>(0.6,0.6)</scale>
-                </female>
-                <thin>
-                    <scale>(0.7,0.7)</scale>
-                </thin>
-                <hulk>
-                    <scale>(0.75,0.75)</scale>
-                </hulk>
-                <fat>
-                    <scale>(0.75,0.75)</scale>
-                </fat>
-        </wornGraphicData>
-    </apparel>
-    <tradeTags>
-      <li>Seg_Accessory</li>
-    </tradeTags>
 
-       
-  </ThingDef>
-  
+<!-- Base -->
+	<ThingDef ParentName="ApparelBase" Name="Seg_AccessoryBase" Abstract="true">
+		<defName>Seg_AccessoryBase</defName>
+		<tickerType>Normal</tickerType>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+		<Mass>3</Mass>
+		<WorkToMake>12000</WorkToMake>
+		<Flammability>0.4</Flammability>
+		<EquipDelay>2</EquipDelay>
+		</statBases>
+		<recipeMaker>
+		<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		<researchPrerequisite>Seg_MunitorumEquipment</researchPrerequisite>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<recipeUsers>
+			<li>Seg_ImperialCraftingTable</li>
+		</recipeUsers>
+		<useIngredientsForColor>false</useIngredientsForColor>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<displayPriority>300</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+		<li>ApparelUtility</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>Seg_Accessory</li>
+			</tags>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(-0.3, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.3,-0.3)</offset>
+					</female>
+					<thin>
+						<offset>(-0.2,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.33,-0.4)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.5,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(0.3, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.3,-0.3)</offset>
+					</female>
+					<thin>
+						<offset>(0.2,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.33,-0.4)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.5,-0.25)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+					<hulk>
+						<offset>(-0.1,-0.1)</offset>
+					</hulk>
+					<thin>
+						<offset>(-0.1,-0.0)</offset>
+					</thin>
+					<female>
+						<offset>(-0.05,-0.0)</offset>
+					</female>
+				</east>
+				<male>
+					<scale>(0.6,0.6)</scale>
+				</male>
+				<female>
+					<scale>(0.6,0.6)</scale>
+				</female>
+				<thin>
+					<scale>(0.65,0.65)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.75,0.75)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.75,0.75)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<tradeTags>
+		<li>Seg_Accessory</li>
+		</tradeTags>
+
+	</ThingDef>
+
+	<!-- Cargo pack -->
 	<ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_CargoPack</defName>
 		<label>field pouches</label>
 		<description>These pouches can be worn to enable the wearer to carry more equipment - especially useful on expeditions and for extended field operations. When worn with appropriate armour they will take the form of an integrated backpack, but provides its extra carrying capacity even if worn by itself.</description>
 		<graphicData>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-		<texPath>Things/Apparel/CargoPack/Seg_CargoPack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<texPath>Things/Apparel/CargoPack/Seg_CargoPack</texPath>
 		</graphicData>
 		<statBases>
 		<MarketValue>150</MarketValue>
@@ -132,24 +133,94 @@
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<costList>
-		<Steel>20</Steel>
-		<Cloth>20</Cloth>
+			<Steel>20</Steel>
+			<Cloth>20</Cloth>
 		</costList>
 		<equippedStatOffsets>
 				<MoveSpeed>-0.10</MoveSpeed>
 				<CarryingCapacity>35</CarryingCapacity>
 				<VEF_MassCarryCapacity>35</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
-        <apparel>
-            <wornGraphicPaths>
-                <li>Things/Apparel/CargoPack/Seg_CargoPack</li>
-            </wornGraphicPaths>
-        </apparel>
-         <comps>
-            <li Class="seg.CompProperties_HideWithBackpack"/>
-        </comps>
-	 
+		<apparel>
+			<wornGraphicPaths>
+				<li>Things/Apparel/CargoPack/Seg_CargoPack</li>
+			</wornGraphicPaths>
+			<wornGraphicData>
+				<north>
+					<male>
+						<offset>(0, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0,-0.3)</offset>
+					</female>
+					<thin>
+						<offset>(0,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0,-0.4)</offset>
+					</hulk>
+					<fat>
+						<offset>(0,-0.25)</offset>
+					</fat>
+				</north>
+				<east>
+					<male>
+						<offset>(-0.05, 0.05)</offset>
+					</male>
+					<female>
+						<offset>(-0.05,-0.0)</offset>
+					</female>
+					<thin>
+						<offset>(-0.1,-0.0)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.2,-0.05)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.3, 0)</offset>
+					</fat>
+				</east>
+				<west>
+					<male>
+						<offset>(0.1, -0.35)</offset>
+					</male>
+					<female>
+						<offset>(0.1,-0.3)</offset>
+					</female>
+					<thin>
+						<offset>(0.15,-0.3)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.25,-0.35)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.35, -0.3)</offset>
+					</fat>
+				</west>
+				<male>
+					<scale>(0.55,0.55)</scale>
+				</male>
+				<female>
+					<scale>(0.5,0.5)</scale>
+				</female>
+				<thin>
+					<scale>(0.45,0.45)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.65,0.65)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.65,0.65)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<comps>
+			<li Class="seg.CompProperties_HideWithBackpack"/>
+		</comps>
+
 	</ThingDef>
+
+	<!-- Medicae bag -->
 	<ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_MedicaeBag</defName>
 		<label>medicae bag</label>
@@ -178,17 +249,55 @@
 				 <MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
 				<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
 		</equippedStatOffsets>
-        <apparel>
-            <wornGraphicPaths>
-                <li>Things/Apparel/MedicaeBag/Seg_MedicaeBag</li>
-            </wornGraphicPaths>
-        </apparel>
-         <comps>
-            <li Class="seg.CompProperties_HideWithBackpack"/>
-        </comps>
+		<apparel>
+			<wornGraphicPaths>
+				<li>Things/Apparel/MedicaeBag/Seg_MedicaeBag</li>
+			</wornGraphicPaths>
+			<wornGraphicData>
+				<north>
+					<male>
+						<offset>(0.3, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.3,-0.3)</offset>
+					</female>
+					<thin>
+						<offset>(0.2,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.33,-0.4)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.5,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(-0.3, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.3,-0.3)</offset>
+					</female>
+					<thin>
+						<offset>(-0.2,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.33,-0.4)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.5,-0.25)</offset>
+					</fat>
+				</south>
+			</wornGraphicData>
+		</apparel>
+		<comps>
+			<li Class="seg.CompProperties_HideWithBackpack"/>
+		</comps>
 	 
 	</ThingDef>
-    <ThingDef ParentName="Seg_AccessoryBase">
+
+	<!-- Power pack -->
+	<ThingDef ParentName="Seg_AccessoryBase">
 		<defName>Seg_Apparel_PowerPack</defName>
 		<label>powerpack</label>
 		<description>This powerpack can be worn to provide power to certain weapons that depend on a portable source of energy. When worn with appropriate armour it will take the form of an integrated backpack, but provides charge to weapons even if worn by itself.</description>
@@ -211,13 +320,13 @@
 		<equippedStatOffsets>
 				<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
-        <apparel>
-            <wornGraphicPaths>
-                <li>Things/Apparel/PowerPack/Seg_PowerPack</li>
-            </wornGraphicPaths>
-        </apparel>
-        <comps>
-        <li Class="CompProperties_ApparelReloadable">
+		<apparel>
+			<wornGraphicPaths>
+				<li>Things/Apparel/PowerPack/Seg_PowerPack</li>
+			</wornGraphicPaths>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>150</maxCharges>
 				<ammoDef>Uranium</ammoDef>
 				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
@@ -228,7 +337,7 @@
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
 			</li>
-            <li Class="seg.CompProperties_HideWithBackpack"/>
+			<li Class="seg.CompProperties_HideWithBackpack"/>
 		</comps>
 	</ThingDef>
 
