@@ -132,9 +132,6 @@
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
-		<thingCategories>
-			<li>Seg_Accessory_Pouches</li>
-		</thingCategories>
 		<costList>
 			<Steel>20</Steel>
 			<Cloth>20</Cloth>
@@ -148,6 +145,9 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/CargoPack/Seg_CargoPack</li>
 			</wornGraphicPaths>
+			<tags>
+				<li>Seg_Accessory_Pouches</li>
+			</tags>
 			<wornGraphicData>
 				<north>
 					<male>
@@ -239,9 +239,6 @@
 		<recipeMaker>
 			<researchPrerequisite>DrugProduction</researchPrerequisite>
 		</recipeMaker>
-		<thingCategories>
-			<li>Seg_Accessory_Medicae</li>
-		</thingCategories>
 		<costList>
 		<Steel>20</Steel>
 		<Cloth>30</Cloth>
@@ -256,6 +253,9 @@
 				<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
 		</equippedStatOffsets>
 		<apparel>
+			<tags>
+				<li>Seg_Accessory_Medicae</li>
+			</tags>
 			<wornGraphicPaths>
 				<li>Things/Apparel/MedicaeBag/Seg_MedicaeBag</li>
 			</wornGraphicPaths>
@@ -318,9 +318,6 @@
 		<recipeMaker>
 			<researchPrerequisite>Batteries</researchPrerequisite>
 		</recipeMaker>
-		<thingCategories>
-			<li>Seg_Accessory_Powerpack</li>
-		</thingCategories>
 		<costList>
 		<Steel>30</Steel>
 		<Uranium>5</Uranium>
@@ -333,6 +330,9 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/PowerPack/Seg_PowerPack</li>
 			</wornGraphicPaths>
+			<tags>
+				<li>Seg_Accessory_Powerpack</li>
+			</tags>
 		</apparel>
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
@@ -365,9 +365,6 @@
 		<recipeMaker>
 			<researchPrerequisite>Microelectronics</researchPrerequisite>
 		</recipeMaker>
-		<thingCategories>
-			<li>Seg_Accessory_Voxcaster</li>
-		</thingCategories>
 		<costList>
             <Steel>35</Steel>
             <Cloth>10</Cloth>
@@ -383,6 +380,9 @@
             <wornGraphicPaths>
                 <li>Things/Apparel/VoxCaster/Seg_VoxCaster</li>
             </wornGraphicPaths>
+			<tags>
+				<li>Seg_Accessory_Voxcaster</li>
+			</tags>
         </apparel>
          <comps>
             <li Class="seg.CompProperties_HideWithBackpack"/>
