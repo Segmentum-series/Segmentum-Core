@@ -132,6 +132,9 @@
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
+		<thingCategories>
+			<li>Seg_Accessory_Pouches</li>
+		</thingCategories>
 		<costList>
 			<Steel>20</Steel>
 			<Cloth>20</Cloth>
@@ -236,6 +239,9 @@
 		<recipeMaker>
 			<researchPrerequisite>DrugProduction</researchPrerequisite>
 		</recipeMaker>
+		<thingCategories>
+			<li>Seg_Accessory_Medicae</li>
+		</thingCategories>
 		<costList>
 		<Steel>20</Steel>
 		<Cloth>30</Cloth>
@@ -312,6 +318,9 @@
 		<recipeMaker>
 			<researchPrerequisite>Batteries</researchPrerequisite>
 		</recipeMaker>
+		<thingCategories>
+			<li>Seg_Accessory_Powerpack</li>
+		</thingCategories>
 		<costList>
 		<Steel>30</Steel>
 		<Uranium>5</Uranium>
@@ -356,6 +365,9 @@
 		<recipeMaker>
 			<researchPrerequisite>Microelectronics</researchPrerequisite>
 		</recipeMaker>
+		<thingCategories>
+			<li>Seg_Accessory_Voxcaster</li>
+		</thingCategories>
 		<costList>
             <Steel>35</Steel>
             <Cloth>10</Cloth>
