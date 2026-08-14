@@ -1,4 +1,4 @@
-<Defs>
+<Defs> <!--fixed .Xml-->
 <HediffDef>
     <defName>SEG_RadBuildup</defName>
     <label>rad-poisoning</label>
