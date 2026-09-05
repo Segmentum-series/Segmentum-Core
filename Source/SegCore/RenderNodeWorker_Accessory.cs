@@ -23,11 +23,16 @@ namespace seg
             ThingDef medicaeBag = DefDatabase<ThingDef>.GetNamed("Seg_Apparel_MedicaeBag", false);
             ThingDef powerPack  = DefDatabase<ThingDef>.GetNamed("Seg_Apparel_PowerPack",  false);
             ThingDef jumpPack   = DefDatabase<ThingDef>.GetNamed("Apparel_PackJump",       false);
-
+            ThingDef plaguePack = DefDatabase<ThingDef>.GetNamed("Seg_GG_PlaguePack", false);
+      
             bool hasCargo   = cargoPack  != null && worn.Any(a => a.def == cargoPack);
             bool hasMedical = medicaeBag != null && worn.Any(a => a.def == medicaeBag);
             bool hasPower   = powerPack  != null && worn.Any(a => a.def == powerPack);
             bool hasJump    = jumpPack   != null && worn.Any(a => a.def == jumpPack);
+            bool hasPlaguePack = plaguePack != null && worn.Any(a => a.def == plaguePack);
+            bool isNurgle = apparel.def.defName == "Seg_GG_MKIIIArmor";
+
+      
 
             if (ModsConfig.RoyaltyActive && hasJump)
                 backpackPath += "_Jump";
@@ -39,6 +44,7 @@ namespace seg
                 backpackPath += "_power";
             ///if (hasComm)
                /// backpackPath += "_communication";
+               /// 
 
             if (hasCargo && backpackPath.EndsWith("_cargo"))
                 cargoPack.graphicData.texPath = "";
@@ -48,6 +54,12 @@ namespace seg
                 powerPack.graphicData.texPath = "";
             ///if (hasComm && backpackPath.EndsWith("_communication"))
                ///voxCaster.graphicData.texPath = "";
+               /// 
+               /// 
+            if (isNurgle && hasPlaguePack)
+            {
+                backpackPath += "_plague";
+            }
 
 
             var multiColor = apparel.GetComp<CompMultiColor>();
