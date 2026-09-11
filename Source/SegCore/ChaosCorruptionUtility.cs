@@ -70,17 +70,22 @@ namespace seg
         }
 
         public void SetCorrupted(IntVec3 c, bool val, bool silent = false)
-        {
-            if (!c.InBounds(map)) return;
-            if (grid[c] == val) return;
-            grid.Set(c, val);
-            dirty = true;
-            map.mapDrawer.MapMeshDirty(c, MapMeshFlagDefOf.Terrain);
-            map.mapDrawer.MapMeshDirty(c, MapMeshFlagDefOf.Buildings);
-            drawer.SetDirty();
-            if (!silent && val) corruptedThisTick.Add(c);
-        }
-
+            {
+                if (!c.InBounds(map)) return;
+                if (grid[c] == val) return;
+                grid.Set(c, val);
+                dirty = true;
+                if (val)
+                {
+                    TerrainDef chaos = DefDatabase<TerrainDef>.GetNamed("Seg_ChaosCorruptedTerrain", false);
+                    if (chaos != null)
+                        map.terrainGrid.SetTerrain(c, chaos);
+                }
+                map.mapDrawer.MapMeshDirty(c, MapMeshFlagDefOf.Terrain);
+                map.mapDrawer.MapMeshDirty(c, MapMeshFlagDefOf.Buildings);
+                drawer.SetDirty();
+                if (!silent && val) corruptedThisTick.Add(c);
+            }
         public float TotalCorruptionPercent
         {
             get
@@ -129,11 +134,15 @@ namespace seg
             return c.InBounds(map) && !c.Fogged(map) && grid[c];
         }
 
-        private Color ExtraColor(int index)
-        {
-            IntVec3 c = CellIndicesUtility.IndexToCell(index, map.Size.x);
-            return grid[c] ? Color.magenta : Color.white;
-        }
+       private Color ExtraColor(int index)
+            {
+                IntVec3 c = CellIndicesUtility.IndexToCell(index, map.Size.x);
+
+                if (grid[c])
+                    return new Color(0.15f, 0f, 0.25f, 0.65f);
+
+                return new Color(0f, 0f, 0f, 0f);
+            }
 
         public void ExposeData()
         {
