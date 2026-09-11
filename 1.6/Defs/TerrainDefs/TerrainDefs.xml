@@ -1,7 +1,7 @@
 <Defs>
 <TerrainDef ParentName="NaturalTerrainBase">
 		<defName>Seg_NurgleSoil</defName>
-		<label>holy swamp</label>
+		<label>blighted soil</label>
 		<texturePath>Terrain/Seg_NurgleSoil</texturePath>
 		<pollutedTexturePath>Terrain/Seg_NurgleSoil</pollutedTexturePath>
     <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
@@ -38,21 +38,21 @@
 	</TerrainDef>
 	<TerrainDef ParentName="WaterBase">
 		<defName>Seg_NurgleWater</defName>
-		<label>bile water</label>
+		<label>watery bile</label>
 		<texturePath>Terrain/Seg_NurgleWater</texturePath>
 		  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
     		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
 	</TerrainDef>
 	<TerrainDef ParentName="Sand">
 		<defName>Seg_NurgleSand</defName>
-		<label>bile water</label>
+		<label>infested sand</label>
 		<texturePath>Terrain/Seg_NurgleSand</texturePath>
 		  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
     <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
 	</TerrainDef>
 	<TerrainDef ParentName="Ice">
 		<defName>Seg_NurgleIce</defName>
-		<label>bile water</label>
+		<label>frozen bile</label>
 		<texturePath>Terrain/Seg_NurgleIce</texturePath>
 		  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
     <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
