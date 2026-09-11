@@ -160,6 +160,11 @@ namespace seg
     {
         private static FastPriorityQueue<IntVec3> tmpQueue;
         private static readonly List<IntVec3> tmpCorrupted = new List<IntVec3>();
+        private static readonly float PlantSpawnChance = 0.25f;
+        private static readonly List<ThingDef> NurglePlants = new List<ThingDef>
+        {
+            DefDatabase<ThingDef>.GetNamed("Seg_GG_FoetidTree", false)
+        };
 
         public static void GrowNurgleCorruptionAt(
             IntVec3 root,
@@ -208,6 +213,14 @@ namespace seg
 
                 grid.SetNurgleCorrupted(next, true, silent);
                 onCorrupt?.Invoke(next);
+                if (NurglePlants.Count > 0 && Rand.Chance(PlantSpawnChance))
+                    {
+                        if (next.Standable(map) && map.thingGrid.ThingAt(next, ThingCategory.Plant) == null)
+                        {
+                            ThingDef plant = NurglePlants.RandomElement();
+                            GenSpawn.Spawn(plant, next, map);
+                        }
+                    }
 
                 foreach (IntVec3 adj in AdjacentNurgleCorruptibleCells(next, map))
                 {
@@ -442,4 +455,43 @@ namespace seg
             Find.World.renderer.Notify_TilePollutionChanged(tile);
         }
     }
+     public class CompProperties_NurgleCorruptionAura : CompProperties
+    {
+        public int tickInterval = 600;
+        public int deathRadius = 5;
+
+        public CompProperties_NurgleCorruptionAura()
+        {
+            compClass = typeof(CompNurgleCorruptionAura);
+        }
+    }
+    public class CompNurgleCorruptionAura : ThingComp
+    {
+        public CompProperties_NurgleCorruptionAura Props => (CompProperties_NurgleCorruptionAura)props;
+
+        public override void CompTick()
+        {
+            if (!parent.Spawned) return;
+            if (!(parent is Pawn pawn)) return;
+
+            if (!pawn.IsHashIntervalTick(Props.tickInterval)) return;
+
+            NurgleConversion.Initialize();
+            NurgleConversion.BloomNurgleConvert(pawn.Position, pawn.Map, 1);
+        }
+
+        public override void PostDestroy(DestroyMode mode, Map map)
+        {
+            if (map == null) return;
+            if (!(parent is Pawn pawn)) return;
+
+            NurgleConversion.Initialize();
+
+            foreach (IntVec3 c in GenRadial.RadialCellsAround(pawn.Position, Props.deathRadius, true))
+            {
+                NurgleConversion.BloomNurgleConvert(c, map, 1);
+            }
+        }
+    }
+
 }
