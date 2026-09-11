@@ -1,9 +1,9 @@
 <Defs>
 <TerrainDef ParentName="NaturalTerrainBase">
-		<defName>Seg_ChaosCorruptedTerrain</defName>
+		<defName>Seg_NurgleSoil</defName>
 		<label>holy swamp</label>
-		<texturePath>Terrain/ChaosTerrian</texturePath>
-		<pollutedTexturePath>Terrain/ChaosTerrian</pollutedTexturePath>
+		<texturePath>Terrain/Seg_NurgleSoil</texturePath>
+		<pollutedTexturePath>Terrain/Seg_NurgleSoil</pollutedTexturePath>
     <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
     <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
 		<edgeType>FadeRough</edgeType>
@@ -35,5 +35,26 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+	</TerrainDef>
+	<TerrainDef ParentName="WaterBase">
+		<defName>Seg_NurgleWater</defName>
+		<label>bile water</label>
+		<texturePath>Terrain/Seg_NurgleWater</texturePath>
+		  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+	</TerrainDef>
+	<TerrainDef ParentName="Sand">
+		<defName>Seg_NurgleSand</defName>
+		<label>bile water</label>
+		<texturePath>Terrain/Seg_NurgleSand</texturePath>
+		  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+	</TerrainDef>
+	<TerrainDef ParentName="Ice">
+		<defName>Seg_NurgleIce</defName>
+		<label>bile water</label>
+		<texturePath>Terrain/Seg_NurgleIce</texturePath>
+		  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
 	</TerrainDef>
 </Defs>
