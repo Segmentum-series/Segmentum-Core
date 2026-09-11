@@ -163,7 +163,9 @@ namespace seg
         private static readonly float PlantSpawnChance = 0.25f;
         private static readonly List<ThingDef> NurglePlants = new List<ThingDef>
         {
-            DefDatabase<ThingDef>.GetNamed("Seg_GG_FoetidTree", false)
+            DefDatabase<ThingDef>.GetNamed("Seg_GG_FoetidTree", false),
+            DefDatabase<ThingDef>.GetNamed("Seg_GG_EyeCluster", false),
+            DefDatabase<ThingDef>.GetNamed("Seg_GG_FeculantBiomass", false)
         };
 
         public static void GrowNurgleCorruptionAt(
