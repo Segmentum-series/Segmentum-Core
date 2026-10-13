@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <loadFolders>
+
+
+	<v1.7>
+		<li>/</li>
+		<li>1.7</li>
+		<li IfModActive = "VanillaExpanded.HelixienGas">1.7/Mods/HexGas</li>
+		<li IfModActive = "vanillaexpanded.vchemfuele">1.7/Mods/ChemExtended</li>
+		<li IfModActive = "Phonicmas.RimDark.MankindsFinest">1.7/Mods/RimDark</li>
+	</v1.7>
+
+	
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
@@ -8,4 +19,6 @@
 		<li IfModActive = "vanillaexpanded.vchemfuele">1.6/Mods/ChemExtended</li>
 		<li IfModActive = "Phonicmas.RimDark.MankindsFinest">1.6/Mods/RimDark</li>
 	</v1.6>
+	
+
 </loadFolders>

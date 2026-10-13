@@ -7,6 +7,7 @@
 	<description>This mod hosts dependency files, and it functions as a central hub for managing dependencies and hosting shared resources, used by various Segmentum mods. It includes an option to change the game to use the Imperial Date System from Warhammer 40,000 (999.M41, etc).\n\nIt also includes:\n- Apparels\n- Weapons\n- Resources\n- Structures\n\nCore is part of "Segmentum", a Warhammer 40.000 modding series by REDACTED.</description>
 	<supportedVersions>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<modDependencies>
 		<li>
