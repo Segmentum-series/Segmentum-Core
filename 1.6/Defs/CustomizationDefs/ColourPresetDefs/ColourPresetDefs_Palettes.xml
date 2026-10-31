@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Full palettes (3 channels) -->
+	<!-- Nothing -->
+
+<!-- Decorations  -->
+	<!-- Adamantium -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_DecoPalette_Adamantium</defName>
+		<label>Adamantium</label>
+		<colour>(234,130,56)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Golden  -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_DecoPalette_Gold</defName>
+		<label>Golden</label>
+		<colour>(240,176,29)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Silver -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_DecoPalette_Silver</defName>
+		<label>Silver</label>
+		<colour>(182,182,182)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Lead -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_DecoPalette_Lead</defName>
+		<label>Lead</label>
+		<colour>(103,103,103)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+</Defs>

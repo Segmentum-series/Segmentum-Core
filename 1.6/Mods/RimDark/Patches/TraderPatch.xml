@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="BEWH_ImperiumTraderBase"]/stockGenerators</xpath>
+		<value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Seg_Ceramite</thingDef>
+					<countRange>50~200</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Seg_Adamantium</thingDef>
+					<countRange>0~100</countRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>Seg_FlakArmour</tradeTag>
+					<thingDefCountRange>0~4</thingDefCountRange>
+					<countRange>1~4</countRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>Seg_Las</tradeTag>
+					<thingDefCountRange>0~2</thingDefCountRange>
+					<countRange>1~2</countRange>
+				</li>
+		</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="BEWH_ImperiumTraderCaravan"]/stockGenerators</xpath>
+		<value>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Seg_Ceramite</thingDef>
+					<countRange>50~200</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Seg_Adamantium</thingDef>
+					<countRange>0~100</countRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>Seg_FlakArmour</tradeTag>
+					<thingDefCountRange>0~4</thingDefCountRange>
+					<countRange>1~4</countRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>Seg_Las</tradeTag>
+					<thingDefCountRange>0~2</thingDefCountRange>
+					<countRange>1~2</countRange>
+				</li>
+		</value>
+  </Operation>
+  
+</Patch>

@@ -1,0 +1,5 @@
+Outpost
+Base
+Station
+Landing
+Watchpost
