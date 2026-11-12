@@ -1,8 +1,8 @@
 <Defs>
 	<HediffDef>
 		<defName>Seg_SlagBurns</defName>
-		<label>Slag burns</label>
-		<description>Your flesh and armor has been turned into a molten liqiud, causing deep burns for a long time, even after exporsure.</description>
+		<label>slag burns</label>
+		<description>Flesh and armour subjected to melta weaponry has been turned into a molten mess. Whatever hasn't been vapourised is suffering severe secondary burns.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
