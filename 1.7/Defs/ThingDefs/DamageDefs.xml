@@ -17,7 +17,15 @@
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<explosionColorCenter>(1, 0.58, 0.21)</explosionColorCenter>
 		<explosionColorEdge>(1, 0.58, 0.21)</explosionColorEdge>
+		<additionalHediffs>
+			<li>
+				<hediff>Seg_SlagBurns</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+			</li>
+    </additionalHediffs>
 	</DamageDef>
+
+	
 
 <!-- Shieldbreaker explosion -->
 	<DamageDef Name="Seg_VIND_ShieldBreakerExplosion">

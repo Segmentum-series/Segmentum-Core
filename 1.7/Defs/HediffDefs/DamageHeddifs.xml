@@ -1,0 +1,19 @@
+<Defs>
+	<HediffDef>
+		<defName>Seg_SlagBurns</defName>
+		<label>Slag burns</label>
+		<description>Your flesh and armor has been turned into a molten liqiud, causing deep burns for a long time, even after exporsure.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>600~600</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="seg.HediffCompProperties_RandomDamage">
+				<intervalTicks>60</intervalTicks>
+				<amount>5~10</amount>
+				<type>Burn</type>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
