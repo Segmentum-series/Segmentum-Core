@@ -17,12 +17,23 @@
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<explosionColorCenter>(1, 0.58, 0.21)</explosionColorCenter>
 		<explosionColorEdge>(1, 0.58, 0.21)</explosionColorEdge>
+		<igniteCellChance>1</igniteCellChance>
+		<igniteChanceByTargetFlammability>
+					<points>
+						<li>(0, 0)</li> 
+						<li>(0.1, 0.60)</li> 
+						<li>(0.2, 0.80)</li>
+						<li>(0.4, 1)</li>
+					</points>
+			</igniteChanceByTargetFlammability>
+
 		<additionalHediffs>
 			<li>
 				<hediff>Seg_SlagBurns</hediff>
 				<severityPerDamageDealt>1</severityPerDamageDealt>
 			</li>
     </additionalHediffs>
+	
 	</DamageDef>
 
 	
